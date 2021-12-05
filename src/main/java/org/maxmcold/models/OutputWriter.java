@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class OutputWriter {
     public enum Action {cool,freeze}
+
     public boolean write(Action action){
         try {
             BufferedWriter bf = new BufferedWriter(new FileWriter("/test.txt"));
