@@ -10,6 +10,11 @@ public class Readable {
 
     public enum Type {TEMPERATURE,HUMIDITY,SUN,WINDOWSTATUS,AWNINGS}
 
+    public Readable(){
+        //create a new default readable object reading from file
+
+
+    }
     //TODO: transform into singleton
     public HashMap<String, Long> getValues() {
         return values;
