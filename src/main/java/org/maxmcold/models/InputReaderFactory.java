@@ -10,6 +10,6 @@ public class InputReaderFactory {
     public static InputReader getInputReader(Readable.Type type) throws IOException {
         Properties properties = CoolProperties.getProperties();
 
-        return new FileInputReader(type);
+        return new FileInputReader();
     }
 }

@@ -15,21 +15,22 @@ public class Readable {
 
 
     }
-    //TODO: transform into singleton
-    public HashMap<String, Long> getValues() {
+
+    public HashMap<String, Object> getValues() {
         return values;
     }
 
-    public void setValues(HashMap<String, Long> values) {
+    public void setValues(HashMap<String, Object> values) {
         this.values = values;
     }
 
-    private HashMap<String,Long> values;
+    private HashMap<String,Object> values;
 
     public String getCode() {
         return code;
     }
-    public void addValue(String key, Long value){
+
+    public void addValue(String key, Object value){
         if (null == values){
             this.values = new HashMap<>();
         }

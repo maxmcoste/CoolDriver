@@ -5,7 +5,7 @@ public class RuleFactory {
     public RuleFactory(){
 
     }
-    public Rule getRule(){
+    public static Rule getRule(){
         return new WarmRule();
     }
 }

@@ -4,8 +4,7 @@ import org.apache.logging.log4j.Logger;
 import org.maxmcold.utils.CoolProperties;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Properties;
+
 
 /**
  * Read inputs from any source
@@ -32,33 +31,76 @@ public class FileInputReader implements InputReader{
     }
 
 
-    public FileInputReader(Readable.Type t){
+    public FileInputReader(){
 
-        this.type = t;
-        switch (t) {
-            case TEMPERATURE:
+        this.readable = new Readable();
 
-                this.readable = new Readable();
-                this.readable.addValue(CoolProperties.temperatureFieldName,this.getTemperature());
-                break;
-            case SUN:
-                //do nothing
-                break;
-            case AWNINGS:
-                //do nothing;
-                break;
-            case HUMIDITY:
-                //do nothing
-                break;
-            case WINDOWSTATUS:
-                //do nothing
-                break;
-            default:
-                this.doNothing();
-                break;
+        this.readable.addValue(CoolProperties.temperatureFieldName,
+                this.getTemperature());
+
+        this.readable.addValue(
+                CoolProperties.humidityFieldName,
+                this.getValue(CoolProperties.sensorHumidityStreamTypeFileName,
+                        CoolProperties.humidityFieldName)
+        );
+
+        this.readable.addValue(
+                CoolProperties.awningsFieldName,
+                this.getAwningsValue()
+        );
+
+        this.readable.addValue(
+                CoolProperties.sunFieldName,
+                this.getValue(CoolProperties.sensorSunStreamTypeFileName,
+                        CoolProperties.sunFieldName)
+        );
+
+        this.readable.addValue(
+                CoolProperties.windowstatusFieldName,
+                this.getValue(CoolProperties.sensorWindowstatusStreamTypeFileName,
+                        CoolProperties.windowstatusFieldName)
+        );
+
+
+
+    }
+    private String getAwningsValue(){
+        String out = null;
+        try {
+
+            File f = new File(CoolProperties.sensorAwningsStreamTypeFileName);
+
+            BufferedReader br = new BufferedReader(new FileReader(f));
+            out = br.readLine();
+
+            br.close();
+
+        } catch (FileNotFoundException e) {
+            logger.error(e.getMessage());
+        } catch (IOException e) {
+            logger.error(e.getMessage());
         }
+        return out;
+    }
+    private Long getValue(String filename,String fieldName){
+        Long longValue = null;
+        try {
 
+            File f = new File(filename);
 
+            BufferedReader br = new BufferedReader(new FileReader(f));
+            String in = br.readLine();
+            longValue = Long.parseLong(in);
+
+            br.close();
+
+        } catch (FileNotFoundException e) {
+            logger.error(e.getMessage());
+
+        } catch (IOException e) {
+            logger.error(e.getMessage());
+        }
+        return longValue;
 
     }
     private Long getTemperature(){
@@ -72,10 +114,8 @@ public class FileInputReader implements InputReader{
             BufferedReader br = new BufferedReader(new FileReader(f));
             String in = br.readLine();
             logger.debug("in value:" + in);
-            readable.setCode(CoolProperties.temperatureCodeName);
-            //readable.setDescription("Check input temperature");
+             //readable.setDescription("Check input temperature");
             longValue = Long.parseLong(in);
-            readable.addValue(CoolProperties.temperatureCodeName,longValue);
 
             br.close();
 
@@ -86,6 +126,7 @@ public class FileInputReader implements InputReader{
         }
         return longValue;
     }
+
     public Readable getValues(){
         return this.readable;
     }

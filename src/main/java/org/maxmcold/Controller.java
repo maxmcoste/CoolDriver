@@ -1,14 +1,16 @@
 package org.maxmcold;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.maxmcold.models.FileInputReader;
+
 import org.maxmcold.models.InputReader;
 import org.maxmcold.models.InputReaderFactory;
 import org.maxmcold.models.Readable;
+import org.maxmcold.rules.Rule;
+import org.maxmcold.rules.RuleFactory;
 import org.maxmcold.utils.CoolProperties;
-import org.maxmcold.utils.DirUtilities;
 
-import java.io.FileInputStream;
+
+
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
@@ -42,6 +44,10 @@ public class Controller implements Runnable{
 
             InputReader ir = InputReaderFactory.getInputReader(Readable.Type.TEMPERATURE);
             Readable r = ir.getValues();
+            Rule rule = RuleFactory.getRule();
+            rule.perform(r);
+
+
 
             String log =
                     " --> Code: " + r.getCode()
