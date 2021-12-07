@@ -15,9 +15,9 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 
 public class Controller implements Runnable{
-    final static Logger logger = LogManager.getLogger(InputReader.class);
+    final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
-    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(3);
+    private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(10);
     private static int initialDelay = 5;
     private static int delay =5;
 
@@ -29,7 +29,6 @@ public class Controller implements Runnable{
     @Override
     public void run() {
         logger.debug("Starting controller");
-
         InputReader ir = new InputReader(Readable.Type.TEMPERATURE);
 
         Readable r = ir.getValues();

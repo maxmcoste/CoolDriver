@@ -1,7 +1,4 @@
 package org.maxmcold.models;
-
-
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,13 +12,9 @@ import java.util.HashMap;
 public class InputReader {
     final static Logger logger = LogManager.getLogger(InputReader.class);
 
-
-    
-
-    String filename = "/Users/massimodelvecchio/in.txt";
-    File f = new File(filename);
     Readable readable;
     public InputReader(Readable.Type type){
+        logger.info("here we go with info");
         logger.debug("Input reader called");
         switch (type) {
             case TEMPERATURE:
@@ -44,6 +37,9 @@ public class InputReader {
     }
     private void readFromFile(){
         try {
+            String filename = "/Users/massimodelvecchio/in.txt";
+            File f = new File(filename);
+
             logger.debug("Start reading from file..." + f);
             BufferedReader br = new BufferedReader(new FileReader(f));
             String in = br.readLine();
