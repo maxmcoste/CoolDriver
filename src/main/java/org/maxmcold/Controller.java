@@ -34,13 +34,10 @@ public class Controller implements Runnable{
     }
     @Override
     public void run() {
-
-
-        try{
-
-            prop = CoolProperties.getProperties();
-            logger.debug("Test property: "+prop.getProperty("test"));
-            logger.debug("Starting controller");
+       try{
+           prop = CoolProperties.getProperties();
+           logger.debug("Test property: "+prop.getProperty("test"));
+           logger.debug("Starting controller");
 
             InputReader ir = InputReaderFactory.getInputReader(Readable.Type.TEMPERATURE);
             Readable r = ir.getValues();
