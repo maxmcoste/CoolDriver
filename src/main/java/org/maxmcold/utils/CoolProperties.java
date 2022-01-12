@@ -4,12 +4,43 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.maxmcold.Controller;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 public class CoolProperties {
+
+    public class Temperature{
+
+        public static void init(){
+
+            Properties prop = new Properties();
+            String appConfigPath = "";
+            try {
+                String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+                appConfigPath = rootPath + "temperature.properties";
+
+                prop.load(new FileInputStream(appConfigPath));
+                String refTemp = prop.getProperty("refTemp");
+                refTemperature = Long.parseLong(refTemp);
+            }catch(FileNotFoundException e){
+                logger.error("File not found:" + appConfigPath , e);
+            }catch(IOException e){
+                logger.error("Exception in Temperature() constructor", e);
+            }catch (NullPointerException e){
+                logger.error("Null valure returned", e);
+            }
+
+        }
+
+        public static Long refTemperature;
+
+    }
+    private static Properties instance;
+    public static String controllerActiveSensor;
+    public static String currentConfig;
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
@@ -37,13 +68,14 @@ public class CoolProperties {
     public static String sensorWindowstatusStreamType;
     public static String sensorWindowstatusStreamTypeFileName;
 
-    public enum TempInputType {
-        FILE,
-        KAFKA,
-        SOCKET
-    }
 
     public static Properties getProperties() throws IOException {
+
+        //Use a singleton value
+        if (null != instance) return instance;
+
+        //init all nested class properties
+        Temperature.init();
 
         Properties prop;
         String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
@@ -51,6 +83,11 @@ public class CoolProperties {
         String appConfigPath = rootPath + "config.properties";
         prop = new Properties();
         prop.load(new FileInputStream(appConfigPath));
+
+
+        //Configure overall params
+        currentConfig = prop.getProperty("currentConfig");
+        controllerActiveSensor = prop.getProperty("base.controller.activeSensors");
 
         //Configure all properties from file
         temperatureFieldName = prop.getProperty("temperature.field.name");
@@ -68,23 +105,19 @@ public class CoolProperties {
         sensorTemperatureStreamType = prop.getProperty("sensor.temperature.stream.type");
         sensorTemperatureStreamTypeFileName = prop.getProperty("sensor.temperature.stream.type.file.name");
 
-
         sensorHumidityStreamType = prop.getProperty("sensor.humidity.stream.type");
         sensorHumidityStreamTypeFileName = prop.getProperty("sensor.humidity.stream.type.file.name");
-
 
         sensorSunStreamType = prop.getProperty("sensor.sun.stream.type");
         sensorSunStreamTypeFileName = prop.getProperty("sensor.sun.stream.type.file.name");
 
-
         sensorAwningsStreamType = prop.getProperty("sensor.awnings.stream.type");
         sensorAwningsStreamTypeFileName = prop.getProperty("sensor.awnings.stream.type.file.name");
 
-
         sensorWindowstatusStreamType = prop.getProperty("sensor.windowstatus.stream.type");
         sensorWindowstatusStreamTypeFileName = prop.getProperty("sensor.windowstatus.stream.type.file.name");
-
-        return prop;
+        instance = prop;
+        return instance;
     }
 
 }

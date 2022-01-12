@@ -1,7 +1,9 @@
 package org.maxmcold.rules;
 
-import org.maxmcold.Actuator;
+import org.maxmcold.actuators.Actuator;
+
 
 public interface Rule {
-    public Actuator perform();
+
+    int perform(org.maxmcold.models.Readable readable, Actuator a);
 }
