@@ -2,6 +2,7 @@ package org.maxmcold;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import org.maxmcold.actuators.ActuatorFactory;
 import org.maxmcold.models.InputReader;
 import org.maxmcold.models.InputReaderFactory;
 import org.maxmcold.models.Readable;
@@ -32,35 +33,30 @@ public class Controller implements Runnable{
     public void execute() {
         ScheduledFuture handleAtFixedDelay = scheduler.scheduleWithFixedDelay(this, initialDelay, delay, SECONDS);
     }
+
     @Override
     public void run() {
        try{
+
            prop = CoolProperties.getProperties();
-           logger.debug("Test property: "+prop.getProperty("test"));
+
            logger.debug("Starting controller");
 
-            InputReader ir = InputReaderFactory.getInputReader(Readable.Type.TEMPERATURE);
-            Readable r = ir.getValues();
-            Rule rule = RuleFactory.getRule();
-            rule.perform(r);
+           InputReader ir = InputReaderFactory.getInputReader(Readable.Type.TEMPERATURE);
+           Readable r = ir.getReadable();
+           Rule rule = RuleFactory.getRule();
 
 
-
-            String log =
+           rule.perform(r, ActuatorFactory.getActuator());
+           String log =
                     " --> Code: " + r.getCode()
                             +" Desc: "  + r.getDescription()
                             +" Value: " + r.getValues().get(CoolProperties.temperatureFieldName);//*/
-            logger.debug("beep :: " + new Date() + " value: " + log);
+           logger.debug("beep :: " + new Date() + " value: " + log);
 
         }catch(IOException e){
-            logger.error(e.getMessage());
+            logger.error(e.getMessage(), e);
         }
-
-
-
-
     }
-
-
 }
 

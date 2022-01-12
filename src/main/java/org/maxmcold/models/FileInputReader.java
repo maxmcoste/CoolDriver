@@ -13,66 +13,65 @@ import java.io.*;
 public class FileInputReader implements InputReader{
 
     final static Logger logger = LogManager.getLogger(FileInputReader.class);
-    private Readable.Type type;
+
     Readable readable;
-
-    @Override
-    public Readable getReadable() {
-        return readable;
-    }
-
-    @Override
-    public Readable.Type getType() {
-        return this.type;
-    }
 
     public void setReadable(Readable readable) {
         this.readable = readable;
     }
 
+    public FileInputReader(Readable.Type type){
 
-    public FileInputReader(){
-
-        this.readable = new Readable();
+        this.readable = new Readable(type);
 
         this.readable.addValue(CoolProperties.temperatureFieldName,
                 this.getTemperature());
-
-        this.readable.addValue(
-                CoolProperties.humidityFieldName,
-                this.getValue(CoolProperties.sensorHumidityStreamTypeFileName,
-                        CoolProperties.humidityFieldName)
-        );
-
-        this.readable.addValue(
-                CoolProperties.awningsFieldName,
-                this.getAwningsValue()
-        );
-
-        this.readable.addValue(
-                CoolProperties.sunFieldName,
-                this.getValue(CoolProperties.sensorSunStreamTypeFileName,
-                        CoolProperties.sunFieldName)
-        );
-
-        this.readable.addValue(
-                CoolProperties.windowstatusFieldName,
-                this.getValue(CoolProperties.sensorWindowstatusStreamTypeFileName,
-                        CoolProperties.windowstatusFieldName)
-        );
-
-
+        switch  (type){
+            case TEMPERATURE -> {
+                this.readable.addValue(
+                        CoolProperties.temperatureFieldName,
+                        this.getValue(CoolProperties.sensorTemperatureStreamTypeFileName,
+                                CoolProperties.temperatureFieldName)
+                );
+            }
+            case SUNPOSITION -> {
+                this.readable.addValue(
+                        CoolProperties.sunFieldName,
+                        this.getValue(CoolProperties.sensorSunStreamTypeFileName,
+                                CoolProperties.sunFieldName)
+                );
+            }
+            case HUMIDITY -> {
+                this.readable.addValue(
+                        CoolProperties.humidityFieldName,
+                        this.getValue(CoolProperties.sensorHumidityStreamTypeFileName,
+                                CoolProperties.humidityFieldName)
+                );
+            }
+            case WINDOWPOSITION -> {
+                this.readable.addValue(
+                        CoolProperties.windowstatusFieldName,
+                        this.getValue(CoolProperties.sensorWindowstatusStreamTypeFileName,
+                                CoolProperties.windowstatusFieldName)
+                );
+            }
+            case AWNINGINPUT -> {
+                this.readable.addValue(
+                        CoolProperties.awningsFieldName,
+                        this.getAwningsValue()
+                );
+            }
+        }
 
     }
+
     private String getAwningsValue(){
         String out = null;
         try {
 
             File f = new File(CoolProperties.sensorAwningsStreamTypeFileName);
-
             BufferedReader br = new BufferedReader(new FileReader(f));
             out = br.readLine();
-
             br.close();
 
         } catch (FileNotFoundException e) {
@@ -82,16 +81,14 @@ public class FileInputReader implements InputReader{
         }
         return out;
     }
+
     private Long getValue(String filename,String fieldName){
         Long longValue = null;
         try {
-
             File f = new File(filename);
-
             BufferedReader br = new BufferedReader(new FileReader(f));
             String in = br.readLine();
             longValue = Long.parseLong(in);
-
             br.close();
 
         } catch (FileNotFoundException e) {
@@ -109,14 +106,12 @@ public class FileInputReader implements InputReader{
 
             String filename = CoolProperties.sensorTemperatureStreamTypeFileName;
             File f = new File(filename);
-
             logger.debug("Start reading from file..." + f);
             BufferedReader br = new BufferedReader(new FileReader(f));
             String in = br.readLine();
             logger.debug("in value:" + in);
              //readable.setDescription("Check input temperature");
             longValue = Long.parseLong(in);
-
             br.close();
 
         } catch (FileNotFoundException e) {
@@ -127,9 +122,10 @@ public class FileInputReader implements InputReader{
         return longValue;
     }
 
-    public Readable getValues(){
+    @Override
+    public Readable getReadable(){
         return this.readable;
     }
 
-    private void doNothing(){}
+
 }
