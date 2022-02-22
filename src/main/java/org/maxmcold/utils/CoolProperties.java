@@ -39,7 +39,7 @@ public class CoolProperties {
 
     }
     private static Properties instance;
-    public static String controllerActiveSensor;
+    public static String activeSensor;
     public static String currentConfig;
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
@@ -67,7 +67,10 @@ public class CoolProperties {
     public static String sensorAwningsStreamTypeFileName;
     public static String sensorWindowstatusStreamType;
     public static String sensorWindowstatusStreamTypeFileName;
+    public static String houseName;
+    public static String houseDescription;
 
+    public static String ruleConfigFile;
 
     public static Properties getProperties() throws IOException {
 
@@ -86,8 +89,11 @@ public class CoolProperties {
 
 
         //Configure overall params
+        houseName = prop.getProperty("house.name");
+        houseDescription = prop.getProperty("house.description");
         currentConfig = prop.getProperty("currentConfig");
-        controllerActiveSensor = prop.getProperty("base.controller.activeSensors");
+        activeSensor = prop.getProperty("base.controller.activeSensors");
+        ruleConfigFile = prop.getProperty("rule.config.file");
 
         //Configure all properties from file
         temperatureFieldName = prop.getProperty("temperature.field.name");
@@ -118,6 +124,21 @@ public class CoolProperties {
         sensorWindowstatusStreamTypeFileName = prop.getProperty("sensor.windowstatus.stream.type.file.name");
         instance = prop;
         return instance;
+    }
+
+    public static String getFileName(String type){
+        Properties prop = new Properties();
+        String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+
+        String appConfigPath = rootPath + "config.properties";
+
+        try {
+            prop.load(new FileInputStream(appConfigPath));
+        } catch (IOException e) {
+            logger.debug(e.getMessage());
+        }
+        String key = "sensor." +type+".stream.type.file.name";
+        return prop.getProperty(key);
     }
 
 }

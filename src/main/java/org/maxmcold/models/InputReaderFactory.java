@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.maxmcold.Controller;
 import org.maxmcold.utils.CoolProperties;
 
+import javax.print.DocFlavor;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
@@ -15,28 +16,45 @@ public class InputReaderFactory {
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
     public static InputReader getInputReader(Readable.Type type) {
-
-
+        String tmp = "";
+        String readType = "";
+        //set default input reader as FileInputReader
+        InputReader out = null;
         try {
 
-            Properties properties = CoolProperties.getProperties();
-            String tmp = "";
+
             switch (type){
-                case AWNINGINPUT -> tmp = CoolProperties.sensorAwningsStreamType;
-                case HUMIDITY -> tmp = CoolProperties.sensorHumidityStreamType;
-                case WINDOWPOSITION -> tmp = CoolProperties.sensorWindowstatusStreamType;
-                case TEMPERATURE -> tmp = CoolProperties.sensorTemperatureStreamType;
-                case SUNPOSITION -> tmp = CoolProperties.sensorSunStreamType;
+
+                case AWNINGINPUT -> {
+                    tmp = CoolProperties.sensorAwningsStreamType;
+                    readType = CoolProperties.awningsFieldName;
+                }
+                case HUMIDITY -> {
+                    tmp = CoolProperties.sensorHumidityStreamType;
+                    readType = CoolProperties.humidityFieldName;
+                }
+                case WINDOWPOSITION -> {
+                    tmp = CoolProperties.sensorWindowstatusStreamType;
+                    readType = CoolProperties.windowstatusFieldName;
+                }
+                case TEMPERATURE -> {
+                    tmp = CoolProperties.sensorTemperatureStreamType;
+                    readType = CoolProperties.temperatureFieldName;
+                }
+                case SUNPOSITION -> {
+                    tmp = CoolProperties.sensorSunStreamType;
+                    readType = CoolProperties.sunFieldName;
+                }
             }
             //TODO: Make the package dynamic
             String className = "org.maxmcold.models."+buildClassName(tmp);
-            logger.debug("ClassName:" + className);
+            logger.debug("ClassName: " + className);
             Class c = Class.forName(className);
-            return (InputReader) c.getDeclaredConstructor(type.getClass()).newInstance(type);
+            out = (InputReader) c.getDeclaredConstructor(String.class).newInstance(readType);
 
 
-        } catch(IOException e){
-            logger.error(e.getMessage(), e);
+
+
         } catch (ClassNotFoundException e) {
             logger.error(e.getMessage(), e);
         } catch (NoSuchMethodException e) {
@@ -47,12 +65,9 @@ public class InputReaderFactory {
             logger.error(e.getMessage(), e);
         } catch (IllegalAccessException e) {
             logger.error(e.getMessage(), e);
-        } finally {
-            //in case of error return the default input reader which is file
-            return new FileInputReader(type);
         }
 
-
+        return out;
     }
     private static String buildClassName(String type){
 
