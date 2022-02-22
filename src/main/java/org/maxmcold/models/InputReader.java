@@ -1,7 +1,13 @@
 package org.maxmcold.models;
 
+import java.util.HashMap;
+
 public interface InputReader {
-    Readable getReadable();
+    String getReaderType();
+    HashMap<String, Object> getValues();
+    Object getValue();
+    HashMap<String,String> getAttributes();
+    void putAttribute(String key, String value);
 
 
 }

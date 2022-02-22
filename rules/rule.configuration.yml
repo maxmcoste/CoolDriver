@@ -1,0 +1,12 @@
+rules:
+  - rule:
+      code: 1
+      name: boiler
+      areas: room1, room2, room3
+      action: WHEN ${->readable->temperature} IS 20 AND ${readable->boilerStatus} IS ${off} < 20 THEN ${action->switchOn} ${item->boiler}
+  - rule:
+      code: 2
+      areas: room1, room2
+      name: windows
+      action: WHEN ${readable->sunposition} IS 15 AND ${readable->windowsPosition} NOT ${closed} THEN ${action->closeAll} ${item->window1}
+

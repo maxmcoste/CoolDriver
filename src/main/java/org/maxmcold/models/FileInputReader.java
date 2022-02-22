@@ -4,66 +4,100 @@ import org.apache.logging.log4j.Logger;
 import org.maxmcold.utils.CoolProperties;
 
 import java.io.*;
+import java.util.Collection;
+import java.util.HashMap;
 
 
-/**
- * Read inputs from any source
- * As of now reads only from a file
- */
+
 public class FileInputReader implements InputReader{
+    HashMap<String,String> attributes = new HashMap<>();
+    HashMap<String,Object> values = new HashMap<>();
 
     final static Logger logger = LogManager.getLogger(FileInputReader.class);
 
-    Readable readable;
 
-    public void setReadable(Readable readable) {
-        this.readable = readable;
+    @Override
+    public HashMap<String, String> getAttributes(){
+        return attributes;
+    }
+    @Override
+    public void putAttribute(String key, String value){
+        attributes.put(key,value);
+    }
+    @Override
+    public String getReaderType() {
+        return readerType;
     }
 
-    public FileInputReader(Readable.Type type){
+    String readerType;
+    String fileName;
 
-        this.readable = new Readable(type);
+    public Object getValue(){
+        String out = null;
+        try {
 
-        this.readable.addValue(CoolProperties.temperatureFieldName,
-                this.getTemperature());
-        switch  (type){
-            case TEMPERATURE -> {
-                this.readable.addValue(
-                        CoolProperties.temperatureFieldName,
-                        this.getValue(CoolProperties.sensorTemperatureStreamTypeFileName,
-                                CoolProperties.temperatureFieldName)
-                );
+            File f = new File(this.fileName);
+            BufferedReader br = new BufferedReader(new FileReader(f));
+            out = br.readLine();
+            br.close();
+
+        } catch (FileNotFoundException e) {
+            logger.error(e.getMessage());
+        } catch (IOException e) {
+            logger.error(e.getMessage());
+        }
+        return out;
+    }
+
+    public HashMap<String, Object> getValues(){
+
+
+        return  this.values;
+    }
+
+    public FileInputReader(String valueType){
+
+        this.readerType = "file";
+
+        this.fileName = CoolProperties.getFileName(valueType);
+
+        try {
+
+            File f = new File(this.fileName);
+            BufferedReader br = new BufferedReader(new FileReader(f));
+
+            String in = br.readLine();
+
+            while (in != null){
+                String[] tokens = this.getData(in);
+                this.values.put(tokens[0],tokens[1]);
+                in = br.readLine();
             }
-            case SUNPOSITION -> {
-                this.readable.addValue(
-                        CoolProperties.sunFieldName,
-                        this.getValue(CoolProperties.sensorSunStreamTypeFileName,
-                                CoolProperties.sunFieldName)
-                );
-            }
-            case HUMIDITY -> {
-                this.readable.addValue(
-                        CoolProperties.humidityFieldName,
-                        this.getValue(CoolProperties.sensorHumidityStreamTypeFileName,
-                                CoolProperties.humidityFieldName)
-                );
-            }
-            case WINDOWPOSITION -> {
-                this.readable.addValue(
-                        CoolProperties.windowstatusFieldName,
-                        this.getValue(CoolProperties.sensorWindowstatusStreamTypeFileName,
-                                CoolProperties.windowstatusFieldName)
-                );
-            }
-            case AWNINGINPUT -> {
-                this.readable.addValue(
-                        CoolProperties.awningsFieldName,
-                        this.getAwningsValue()
-                );
-            }
+            br.close();
+
+        } catch (FileNotFoundException e) {
+            logger.error(e.getMessage());
+
+        } catch (IOException e) {
+            logger.error(e.getMessage());
         }
 
+
+
+
     }
+
+    private String[] getData(String line){
+        String[] tokens = new String[1];
+        if (line == null) return tokens;
+        tokens = line.split("=");
+        if (tokens[0] == null)  tokens[0] = "no key";
+        if (tokens[1] == null)  tokens[1] = "no value";
+        return tokens;
+    }
+
+
+
 
     private String getAwningsValue(){
         String out = null;
@@ -82,10 +116,10 @@ public class FileInputReader implements InputReader{
         return out;
     }
 
-    private Long getValue(String filename,String fieldName){
+    private Long getValue(String fieldName){
         Long longValue = null;
         try {
-            File f = new File(filename);
+            File f = new File(this.fileName);
             BufferedReader br = new BufferedReader(new FileReader(f));
             String in = br.readLine();
             longValue = Long.parseLong(in);
@@ -121,11 +155,4 @@ public class FileInputReader implements InputReader{
         }
         return longValue;
     }
-
-    @Override
-    public Readable getReadable(){
-        return this.readable;
-    }
-
-
 }

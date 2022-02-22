@@ -13,43 +13,75 @@ public class Readable {
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
-    private static CoolProperties properties;
+    public InputReader getInputReader() {
+        return inputReader;
+    }
+
+    private InputReader inputReader;
     private String code;
     private String description;
-
+    private HashMap<String,Object> values;
 
     public Readable (Type type){
+
         try {
             CoolProperties.getProperties();
         } catch (IOException e) {
             logger.error("IOError to get Properties", e);
         }
         switch (type){
+
             case TEMPERATURE -> {
+
                 this.code = CoolProperties.temperatureCodeName;
                 this.description = CoolProperties.temperatureFieldName;
+                inputReader = InputReaderFactory.getInputReader(Type.TEMPERATURE);
+
+
             }
+
             case HUMIDITY -> {
                 this.code = CoolProperties.humidityCodeName;
                 this.description = CoolProperties.humidityFieldName;
+                inputReader = InputReaderFactory.getInputReader(Type.HUMIDITY);
+
             }
+
             case SUNPOSITION -> {
                 this.code = CoolProperties.sunCodeName;
                 this.description = CoolProperties.sunFieldName;
+                inputReader = InputReaderFactory.getInputReader(Type.SUNPOSITION);
+
             }
+
             case WINDOWPOSITION -> {
                 this.code = CoolProperties.windowstatusCodeName;
                 this.description = CoolProperties.windowstatusFieldName;
+                inputReader = InputReaderFactory.getInputReader(Type.WINDOWPOSITION);
+
             }
+
+            case AWNINGINPUT -> {
+                this.code = CoolProperties.awningsCodeName;
+                this.description = CoolProperties.awningsFieldName;
+                inputReader = InputReaderFactory.getInputReader(Type.AWNINGINPUT);
+
+
+            }
+
+
         }
+        this.values = inputReader.getValues();
+
+
     }
     public enum Type {TEMPERATURE,WINDOWPOSITION,HUMIDITY,SUNPOSITION,AWNINGINPUT}
-
+    public enum StreamType {FILE,SOCKET,KAFKA}
     public HashMap<String, Object> getValues() {
         return values;
     }
 
-    private HashMap<String,Object> values;
+
 
     public String getCode() {
         return code;
@@ -73,6 +105,9 @@ public class Readable {
     public void setDescription(String description) {
         this.description = description;
     }
+
+
+
 
 
 

@@ -2,17 +2,42 @@ package org.maxmcold.rules;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.maxmcold.actions.BoilerAction;
 import org.maxmcold.actuators.Actuator;
 import org.maxmcold.Controller;
+import org.maxmcold.models.Action;
 import org.maxmcold.utils.CoolProperties;
 
 import java.util.HashMap;
 import org.maxmcold.models.Readable;
 
-public class BoilerRule implements Rule{
 
+public class BoilerRule implements Rule{
+    @Override
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private String code;
+    private String name;
     private Long refTemp ;
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
+    public Action getAction(){
+        return new BoilerAction();
+    }
     public int perform(Readable r, Actuator a){
 
         logger.debug("Entering Actuator");
