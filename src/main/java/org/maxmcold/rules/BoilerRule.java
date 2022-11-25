@@ -6,10 +6,10 @@ import org.maxmcold.actions.BoilerAction;
 import org.maxmcold.actuators.Actuator;
 import org.maxmcold.Controller;
 import org.maxmcold.models.Action;
+import org.maxmcold.models.ReadableImpl;
 import org.maxmcold.utils.CoolProperties;
 
 import java.util.HashMap;
-import org.maxmcold.models.Readable;
 
 
 public class BoilerRule implements Rule{
@@ -38,7 +38,7 @@ public class BoilerRule implements Rule{
     public Action getAction(){
         return new BoilerAction();
     }
-    public int perform(Readable r, Actuator a){
+    public int perform(ReadableImpl r, Actuator a){
 
         logger.debug("Entering Actuator");
         HashMap<String,Object> hash = r.getValues();
@@ -67,5 +67,11 @@ public class BoilerRule implements Rule{
 
         return 1;
     }
+
+
+    public boolean when(){return true;}
+    public boolean and(){return true;}
+    public boolean moreThan(){return true;}
+    public boolean lessThan(){return true;}
 
 }

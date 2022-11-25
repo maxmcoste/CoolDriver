@@ -1,1 +1,1 @@
-humid1=12
+humid.sala=12

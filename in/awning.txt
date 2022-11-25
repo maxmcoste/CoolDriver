@@ -1,1 +1,1 @@
-awning1=1100
+awning.sala=1100
