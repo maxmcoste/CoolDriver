@@ -1,9 +1,8 @@
-package org.maxmcold.io;
+package org.maxmcold.models;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.maxmcold.Controller;
-import org.maxmcold.readable.ReadableFactory;
 import org.maxmcold.utils.CoolProperties;
 
 import java.lang.reflect.InvocationTargetException;
@@ -12,7 +11,7 @@ public class InputReaderFactory {
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
-    public static InputReader getInputReader(ReadableFactory.Type type) {
+    public static InputReader getInputReader(ReadableImpl.Type type) {
         String tmp = "";
         String readType = "";
         //set default input reader as FileInputReader
@@ -43,13 +42,12 @@ public class InputReaderFactory {
                     readType = CoolProperties.sunFieldName;
                 }
             }
-
-            String packageName = InputReaderFactory.class.getPackageName();
-            String className = packageName+"."+buildClassName(tmp);
+            //TODO: Make the package dynamic
+            String className = "org.maxmcold.models."+buildClassName(tmp);
             //logger.debug("ClassName: " + className);
             Class c = Class.forName(className);
-            //FileInputReader fir = new FileInputReader(readType);
             out = (InputReader) c.getDeclaredConstructor(String.class).newInstance(readType);
+
 
 
 

@@ -1,13 +1,13 @@
 package org.maxmcold.readable;
 
-import org.maxmcold.io.InputReader;
-import org.maxmcold.io.InputReaderFactory;
-import org.maxmcold.statuses.Status;
+import org.maxmcold.models.*;
+import org.maxmcold.models.Readable;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
-public class Temperature implements Readable {
-    //TODO all readables will implement the same code, create a library or common implementation
+public class Temperature implements org.maxmcold.models.Readable {
+
     /**
      * Returns the last long value of input stream temperature written in the form:
      * key = <i>value</i>
@@ -18,15 +18,26 @@ public class Temperature implements Readable {
     @Override
     public long getValue() {
 
-        //TODO manage errors
-        ReadableImpl ri = new ReadableImpl(ReadableFactory.Type.TEMPERATURE);
-        return ri.getValue();
+
+        InputReader ir = InputReaderFactory.getInputReader(ReadableImpl.Type.TEMPERATURE);
+        HashMap<String, Object> values = ir.getValues();
+        Iterator<Object> iterator = values.values().iterator();
+
+        long out = -1;
+
+        //TODO: has does not guarantee ordering fifo. Buffering is required
+        while (iterator.hasNext()){
+            String tmp =iterator.next().toString();
+            out = Long.parseLong(tmp);
+        }
+
+        return out;
     }
 
-
     @Override
-    public HashMap<String, Object> getValues() {
-        ReadableImpl ri = new ReadableImpl(ReadableFactory.Type.TEMPERATURE);
-        return ri.getValues();
+    public Status getStatus() {
+
+        //when there is no status related to this readable return always ON
+        return Status.ON;
     }
 }
