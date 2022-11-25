@@ -2,7 +2,7 @@ package org.maxmcold.items;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.maxmcold.io.FileInputReader;
+import org.maxmcold.models.FileInputReader;
 
 public class Boiler implements Item{
 

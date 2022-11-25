@@ -11,17 +11,18 @@ public class ReadableFactory {
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
-    public static Readable getReadable(Type readableType)  {
+    public static org.maxmcold.models.Readable getReadable(Type readableType)  {
 
         //Set default Readable to temperature (most used)
-        Readable out = (Readable) new Temperature();
+        org.maxmcold.models.Readable out = (org.maxmcold.models.Readable) new Temperature();
         switch (readableType){
 
-            case TEMPERATURE -> { out = (Readable) new Temperature();}
-            case HUMIDITY -> { out = (Readable) new Humidty();}
-            case SUNPOSITION -> {out = (Readable) new SunPosition();}
-            case WINDOWPOSITION -> {out = (Readable) new WindowPosition();}
-            case AWNINGINPUT -> {out = (Readable) new AwningPosition();}
+            case TEMPERATURE -> { out = (org.maxmcold.models.Readable) new Temperature();}
+
+            case HUMIDITY -> {}
+            case SUNPOSITION -> {}
+            case WINDOWPOSITION -> {}
+            case AWNINGINPUT -> {}
 
 
         }

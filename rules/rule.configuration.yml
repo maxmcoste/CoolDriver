@@ -1,6 +1,6 @@
-!!org.maxmcold.rules.Rule
+!!org.maxmcold.models.Rule
 code: 1
 description: when temp is under 20 and boiler is off then switch on boiler
 name: setBoiler
 areas: sala, room1, room2, room3
-action: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+action: WHEN ${readable.temperature.value} < 20 AND ${readable.boiler.status} = ${readable.boiler.status->off} THEN ${boiler->switchOn}
