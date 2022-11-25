@@ -1,10 +1,6 @@
 package org.maxmcold.actuators;
 
-import org.maxmcold.models.Readable;
-import org.maxmcold.utils.CoolProperties;
-
 import java.io.IOException;
-import java.util.Properties;
 
 public class ActuatorFactory {
     private static Actuator instance;

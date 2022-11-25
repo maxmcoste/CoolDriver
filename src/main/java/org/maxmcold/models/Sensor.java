@@ -2,15 +2,17 @@ package org.maxmcold.models;
 
 public class Sensor {
 
-    private Readable readable;
+    private ReadableImpl readable;
     public Sensor(){
 
+
     }
-    public Readable getReadable() {
+
+    public ReadableImpl getReadable() {
         return readable;
     }
 
-    public void setReadable(Readable readable) {
+    public void setReadable(ReadableImpl readable) {
         this.readable = readable;
     }
 
