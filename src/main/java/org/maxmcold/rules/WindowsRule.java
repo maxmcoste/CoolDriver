@@ -6,6 +6,7 @@ import org.maxmcold.Controller;
 import org.maxmcold.actions.WindowAction;
 import org.maxmcold.actuators.Actuator;
 import org.maxmcold.models.Action;
+import org.maxmcold.models.ReadableImpl;
 
 public class WindowsRule implements Rule{
 
@@ -37,11 +38,14 @@ public class WindowsRule implements Rule{
     private Long refTemp ;
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
-    public int perform(org.maxmcold.models.Readable r, Actuator a){
+    public int perform(ReadableImpl r, Actuator a){
         logger.debug("Entering Actuator");
 
 
         return 1;
     }
-
+    public boolean when(){return true;}
+    public boolean and(){return true;}
+    public boolean moreThan(){return true;}
+    public boolean lessThan(){return true;}
 }

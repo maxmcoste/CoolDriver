@@ -8,6 +8,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class CoolProperties {
@@ -81,12 +83,22 @@ public class CoolProperties {
         Temperature.init();
 
         Properties prop;
-        String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+        logger.debug("SETTING ROOT PATH...");
+        Path currentWorkingDir = Paths.get("").toAbsolutePath();
+
+        String rootPath = currentWorkingDir.normalize().toString();
+
+
+        //String tempPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
         logger.debug(rootPath);
-        String appConfigPath = rootPath + "config.properties";
+        logger.debug("PRINTING RESOURCE PATH...");
+
+        //logger.debug(tempPath);
+        String appConfigPath = rootPath + "/target/classes/config.properties";
+
         prop = new Properties();
         prop.load(new FileInputStream(appConfigPath));
-
+        logger.debug(appConfigPath);
 
         //Configure overall params
         houseName = prop.getProperty("house.name");
