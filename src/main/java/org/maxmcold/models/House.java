@@ -33,12 +33,12 @@ public class House {
     private HashMap<String, Area> areas;
     private String name;
     private String description;
+
     public  House(){
         this.name = CoolProperties.houseName;
         this.description = CoolProperties.houseDescription;
         //initial configuration: only one area in the house - to be extended
         Area a = new Area();
-
         areas.put(name,a);
     }
 

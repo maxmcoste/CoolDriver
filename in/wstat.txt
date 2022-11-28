@@ -1,1 +1,1 @@
-wstat1=23
+wstat1=0

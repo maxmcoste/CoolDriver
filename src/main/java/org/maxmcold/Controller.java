@@ -3,9 +3,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import org.maxmcold.models.*;
-import org.maxmcold.models.Readable;
-import org.maxmcold.models.ReadableImpl;
+import org.maxmcold.readable.Readable;
 import org.maxmcold.readable.ReadableFactory;
+import org.maxmcold.rules.Rule;
+import org.maxmcold.rules.RuleFactory;
 import org.maxmcold.utils.CoolProperties;
 import org.maxmcold.utils.RuleParser;
 
@@ -46,13 +47,17 @@ public class Controller implements Runnable{
            HashMap<String, Sensor> sensors = area.getSensors();
 
            //TODO: just print for now
-           RuleParser rp = new RuleParser();
-           String[] tokens = rp.parse();
+           Rule rule = RuleFactory.getRule();
+           logger.debug("[[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK");
+           rule.execute();
+           logger.debug("EVAL STATEMENT: "+rule.getAction());
+           logger.debug("]]]]]]]]]]] END CONDITION RECURSIVE CHECK");
+           //TODO group sensors by area
+           //Readable readme = ReadableFactory.getReadable(ReadableFactory.Type.TEMPERATURE);
+           //long value = readme.getValue();
+           //logger.debug("READ TEMP FROM TEMPERATURE OBJECT: "+value);
 
-           org.maxmcold.models.Readable readme = ReadableFactory.getReadable(ReadableFactory.Type.TEMPERATURE);
-           long value = readme.getValue();
-
-           for (int i=0; i< tokens.length; logger.debug(tokens[i++]+"\n"));
+           //for (int i=0; i< tokens.length; logger.debug(tokens[i++]+"\n"));
 
 
            Iterator<Sensor> iterator = sensors.values().iterator();
@@ -60,14 +65,10 @@ public class Controller implements Runnable{
            while (iterator.hasNext()){
 
                Sensor s =iterator.next();
-               ReadableImpl r = s.getReadable();
-
-               logger.debug("sensor description --->" + s.getFullDescription());
+               Readable r = s.getReadable();
+               logger.debug("sensor description --->" + s.getDesc());
                HashMap<String,Object> values = r.getValues();
-
-               String log = " --> Code: " + r.getCode()
-                               +" Desc: "  + r.getDescription()
-                               +" Value: " + values.toString();
+               String log = " Value: " + values.toString();
                logger.debug("beep :: " + new Date() + " value: " + log);//*/
            }
 
