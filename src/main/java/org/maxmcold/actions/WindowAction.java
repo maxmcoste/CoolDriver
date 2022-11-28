@@ -3,7 +3,7 @@ package org.maxmcold.actions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.maxmcold.models.Action;
-import org.maxmcold.models.FileInputReader;
+import org.maxmcold.io.FileInputReader;
 
 import java.io.IOException;
 

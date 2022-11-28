@@ -126,19 +126,21 @@ public class CoolProperties {
         sensorHumidityStreamType = prop.getProperty("sensor.humidity.stream.type");
         sensorHumidityStreamTypeFileName = prop.getProperty("sensor.humidity.stream.type.file.name");
 
-        sensorSunStreamType = prop.getProperty("sensor.sun.stream.type");
-        sensorSunStreamTypeFileName = prop.getProperty("sensor.sun.stream.type.file.name");
+        sensorSunStreamType = prop.getProperty("sensor.sunposition.stream.type");
+        sensorSunStreamTypeFileName = prop.getProperty("sensor.sunposition.stream.type.file.name");
 
         sensorAwningsStreamType = prop.getProperty("sensor.awnings.stream.type");
         sensorAwningsStreamTypeFileName = prop.getProperty("sensor.awnings.stream.type.file.name");
 
         sensorWindowstatusStreamType = prop.getProperty("sensor.windowstatus.stream.type");
         sensorWindowstatusStreamTypeFileName = prop.getProperty("sensor.windowstatus.stream.type.file.name");
+
         instance = prop;
         return instance;
     }
 
     public static String getFileName(String type){
+
         Properties prop = new Properties();
         String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
 
