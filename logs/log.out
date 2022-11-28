@@ -1,0 +1,118 @@
+2022-11-29 00:27:15,513 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-11-29 00:27:15,517 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-11-29 00:27:15,517 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-11-29 00:27:15,519 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-11-29 00:27:15,519 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-11-29 00:27:15,523 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-11-29 00:27:15,601 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-11-29 00:27:15,625 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-11-29 00:27:15,628 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-11-29 00:27:15,632 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-11-29 00:27:15,634 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-11-29 00:27:15,634 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-11-29 00:27:15,637 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-11-29 00:27:15,639 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-11-29 00:27:15,641 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:15 CET 2022 value:  Value: {humid.sala=12}
+2022-11-29 00:27:15,641 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-11-29 00:27:15,642 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:15 CET 2022 value:  Value: {wstat1=0}
+2022-11-29 00:27:15,642 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-11-29 00:27:15,643 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:15 CET 2022 value:  Value: {awning.sala=1100}
+2022-11-29 00:27:15,643 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-11-29 00:27:15,645 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:15 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-11-29 00:27:15,645 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-11-29 00:27:15,646 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:15 CET 2022 value:  Value: {sun1=0}
+2022-11-29 00:27:20,653 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-11-29 00:27:20,654 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-11-29 00:27:20,660 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-11-29 00:27:20,681 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-11-29 00:27:20,683 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-11-29 00:27:20,684 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-11-29 00:27:20,685 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-11-29 00:27:20,686 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-11-29 00:27:20,687 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-11-29 00:27:20,687 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-11-29 00:27:20,692 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:20 CET 2022 value:  Value: {humid.sala=12}
+2022-11-29 00:27:20,693 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-11-29 00:27:20,695 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:20 CET 2022 value:  Value: {wstat1=0}
+2022-11-29 00:27:20,695 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-11-29 00:27:20,698 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:20 CET 2022 value:  Value: {awning.sala=1100}
+2022-11-29 00:27:20,698 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-11-29 00:27:20,700 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:20 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-11-29 00:27:20,701 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-11-29 00:27:20,702 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:20 CET 2022 value:  Value: {sun1=0}
+2022-11-29 00:27:25,711 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-11-29 00:27:25,714 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-11-29 00:27:25,733 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-11-29 00:27:25,741 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-11-29 00:27:25,743 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-11-29 00:27:25,744 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-11-29 00:27:25,745 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-11-29 00:27:25,745 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-11-29 00:27:25,748 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-11-29 00:27:25,749 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-11-29 00:27:25,749 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:25 CET 2022 value:  Value: {humid.sala=12}
+2022-11-29 00:27:25,750 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-11-29 00:27:25,750 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:25 CET 2022 value:  Value: {wstat1=0}
+2022-11-29 00:27:25,751 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-11-29 00:27:25,751 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:25 CET 2022 value:  Value: {awning.sala=1100}
+2022-11-29 00:27:25,751 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-11-29 00:27:25,752 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:25 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-11-29 00:27:25,752 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-11-29 00:27:25,753 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:25 CET 2022 value:  Value: {sun1=0}
+2022-11-29 00:27:30,760 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-11-29 00:27:30,761 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-11-29 00:27:30,773 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-11-29 00:27:30,785 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-11-29 00:27:30,788 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-11-29 00:27:30,789 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-11-29 00:27:30,792 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-11-29 00:27:30,792 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-11-29 00:27:30,802 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-11-29 00:27:30,802 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-11-29 00:27:30,803 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:30 CET 2022 value:  Value: {humid.sala=12}
+2022-11-29 00:27:30,804 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-11-29 00:27:30,805 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:30 CET 2022 value:  Value: {wstat1=0}
+2022-11-29 00:27:30,805 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-11-29 00:27:30,806 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:30 CET 2022 value:  Value: {awning.sala=1100}
+2022-11-29 00:27:30,806 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-11-29 00:27:30,807 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:30 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-11-29 00:27:30,808 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-11-29 00:27:30,810 DEBUG o.m.Controller [pool-2-thread-1] beep :: Tue Nov 29 00:27:30 CET 2022 value:  Value: {sun1=0}
+2022-11-29 00:27:35,817 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-11-29 00:27:35,819 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-11-29 00:27:35,826 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-11-29 00:27:35,834 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-11-29 00:27:35,836 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-11-29 00:27:35,837 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-11-29 00:27:35,841 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-11-29 00:27:35,841 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-11-29 00:27:35,843 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-11-29 00:27:35,844 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-11-29 00:27:35,847 DEBUG o.m.Controller [pool-2-thread-3] beep :: Tue Nov 29 00:27:35 CET 2022 value:  Value: {humid.sala=12}
+2022-11-29 00:27:35,848 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-11-29 00:27:35,849 DEBUG o.m.Controller [pool-2-thread-3] beep :: Tue Nov 29 00:27:35 CET 2022 value:  Value: {wstat1=0}
+2022-11-29 00:27:35,849 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-11-29 00:27:35,851 DEBUG o.m.Controller [pool-2-thread-3] beep :: Tue Nov 29 00:27:35 CET 2022 value:  Value: {awning.sala=1100}
+2022-11-29 00:27:35,851 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-11-29 00:27:35,852 DEBUG o.m.Controller [pool-2-thread-3] beep :: Tue Nov 29 00:27:35 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-11-29 00:27:35,852 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-11-29 00:27:35,853 DEBUG o.m.Controller [pool-2-thread-3] beep :: Tue Nov 29 00:27:35 CET 2022 value:  Value: {sun1=0}
+2022-11-29 00:27:40,859 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-11-29 00:27:40,862 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-11-29 00:27:40,879 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-11-29 00:27:40,883 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-11-29 00:27:40,887 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-11-29 00:27:40,888 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-11-29 00:27:40,890 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-11-29 00:27:40,890 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-11-29 00:27:40,894 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-11-29 00:27:40,894 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-11-29 00:27:40,896 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:40 CET 2022 value:  Value: {humid.sala=12}
+2022-11-29 00:27:40,896 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-11-29 00:27:40,897 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:40 CET 2022 value:  Value: {wstat1=0}
+2022-11-29 00:27:40,898 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-11-29 00:27:40,898 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:40 CET 2022 value:  Value: {awning.sala=1100}
+2022-11-29 00:27:40,899 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-11-29 00:27:40,903 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:40 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-11-29 00:27:40,903 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-11-29 00:27:40,904 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:40 CET 2022 value:  Value: {sun1=0}
