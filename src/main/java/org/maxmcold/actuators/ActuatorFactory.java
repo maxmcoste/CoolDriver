@@ -9,7 +9,7 @@ public class ActuatorFactory {
         //TOD0: returns only ThermoActuator for now
         if (null == instance) {
 
-            instance = new ThermoActuator();
+            instance = new BoilerActuator();
 
         }
         return instance;

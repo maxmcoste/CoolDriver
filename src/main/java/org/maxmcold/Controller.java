@@ -2,6 +2,10 @@ package org.maxmcold;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import org.maxmcold.io.OutputWriter;
+import org.maxmcold.io.OutputWriterFactory;
+import org.maxmcold.items.Item;
+import org.maxmcold.items.ItemFactory;
 import org.maxmcold.models.*;
 import org.maxmcold.readable.Readable;
 import org.maxmcold.readable.ReadableFactory;
@@ -37,6 +41,11 @@ public class Controller implements Runnable{
     @Override
     public void run() {
        try{
+
+           CoolProperties.loadProperties();
+           Item item = ItemFactory.getItem();
+           OutputWriter ow = OutputWriterFactory.getOutputWriter(item);
+           ow.write(item);
 
            prop = CoolProperties.getProperties();
            logger.debug("Starting controller");

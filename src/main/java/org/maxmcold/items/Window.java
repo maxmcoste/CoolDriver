@@ -4,22 +4,62 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.maxmcold.io.FileInputReader;
 
-public class Window {
+public class Window implements Item {
 
     final static Logger logger = LogManager.getLogger(FileInputReader.class);
 
-    public boolean open(){
-        logger.debug("Opening window");
-        return true;
+    @Override
+    public boolean openStatus() {
+        return false;
     }
 
-    public boolean close(){
-        logger.debug("Closing Window");
-        return true;
+    @Override
+    public boolean closeStatus() {
+        return false;
     }
 
-    public boolean setPosition(int position){
-        logger.debug("Setting position to: " + position);
-        return true;
+    @Override
+    public boolean onStatus() {
+        return false;
+    }
+
+    @Override
+    public boolean offStatus() {
+        return false;
+    }
+
+    @Override
+    public Status getStatus() {
+        return null;
+    }
+
+    @Override
+    public boolean setPosition(Long position) {
+        return false;
+    }
+
+    @Override
+    public boolean setStatus(Status status) {
+        return false;
+    }
+
+    @Override
+    public String getType() {
+        return null;
+    }
+
+    @Override
+    public String getWriterType() {
+        return null;
+    }
+
+    @Override
+    public String getWriterURL() {
+        return null;
+    }
+
+    @Override
+    public Long getPosition() {
+        return null;
     }
 }
