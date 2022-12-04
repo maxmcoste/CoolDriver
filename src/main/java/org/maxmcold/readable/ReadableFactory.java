@@ -7,7 +7,7 @@ import org.maxmcold.Controller;
 
 public class ReadableFactory {
 
-    public enum Type {TEMPERATURE,WINDOWPOSITION,HUMIDITY,SUNPOSITION,AWNINGINPUT}
+    public enum Type {TEMPERATURE,WINDOWPOSITION,HUMIDITY,SUNPOSITION,AWNINGINPUT,BOILERSTATUS}
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 

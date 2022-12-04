@@ -14,32 +14,7 @@ import java.util.Properties;
 
 public class CoolProperties {
 
-    public class Temperature{
 
-        public static void init(){
-
-            Properties prop = new Properties();
-            String appConfigPath = "";
-            try {
-                String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
-                appConfigPath = rootPath + "temperature.properties";
-
-                prop.load(new FileInputStream(appConfigPath));
-                String refTemp = prop.getProperty("refTemp");
-                refTemperature = Long.parseLong(refTemp);
-            }catch(FileNotFoundException e){
-                logger.error("File not found:" + appConfigPath , e);
-            }catch(IOException e){
-                logger.error("Exception in Temperature() constructor", e);
-            }catch (NullPointerException e){
-                logger.error("Null valure returned", e);
-            }
-
-        }
-
-        public static Long refTemperature;
-
-    }
     private static Properties instance;
     public static String activeSensor;
     public static String currentConfig;
@@ -71,6 +46,8 @@ public class CoolProperties {
     public static String sensorWindowstatusStreamTypeFileName;
     public static String houseName;
     public static String houseDescription;
+    public static String boilerWriterType;
+    public static String boilerWriterFile;
 
     public static String ruleConfigFile;
 
@@ -78,10 +55,6 @@ public class CoolProperties {
 
         //Use a singleton value
         if (null != instance) return instance;
-
-        //init all nested class properties
-        Temperature.init();
-
         Properties prop;
         logger.debug("SETTING ROOT PATH...");
         Path currentWorkingDir = Paths.get("").toAbsolutePath();
@@ -135,10 +108,15 @@ public class CoolProperties {
         sensorWindowstatusStreamType = prop.getProperty("sensor.windowstatus.stream.type");
         sensorWindowstatusStreamTypeFileName = prop.getProperty("sensor.windowstatus.stream.type.file.name");
 
+        boilerWriterType = prop.getProperty("item.boiler.write.type");
+        boilerWriterFile = prop.getProperty("item.boiler.file.name");
+
         instance = prop;
         return instance;
     }
-
+    public static void loadProperties() throws IOException {
+        CoolProperties.getProperties();
+    }
     public static String getFileName(String type){
 
         Properties prop = new Properties();

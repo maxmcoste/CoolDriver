@@ -116,3 +116,1544 @@
 2022-11-29 00:27:40,903 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:40 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
 2022-11-29 00:27:40,903 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
 2022-11-29 00:27:40,904 DEBUG o.m.Controller [pool-2-thread-2] beep :: Tue Nov 29 00:27:40 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:20:43,943 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-03 17:20:43,947 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-03 17:20:43,947 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-03 17:20:43,949 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-03 17:20:43,949 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:20:43,955 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:20:44,044 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:20:44,065 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:20:44,068 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-03 17:20:44,070 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:20:44,072 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-03 17:20:44,072 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:20:44,076 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:20:44,077 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-03 17:20:44,080 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:44 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:20:44,080 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-03 17:20:44,081 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:44 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:20:44,081 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-03 17:20:44,082 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:44 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:20:44,082 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-03 17:20:44,083 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:44 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:20:44,083 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-03 17:20:44,084 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:44 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:20:49,094 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:20:49,095 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:20:49,111 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:20:49,124 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:20:49,126 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-03 17:20:49,128 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:20:49,129 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-03 17:20:49,129 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:20:49,130 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:20:49,131 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-03 17:20:49,135 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:49 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:20:49,136 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-03 17:20:49,138 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:49 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:20:49,138 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-03 17:20:49,141 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:49 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:20:49,141 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-03 17:20:49,142 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:49 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:20:49,142 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-03 17:20:49,143 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:49 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:20:54,152 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-03 17:20:54,156 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-03 17:20:54,171 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:20:54,183 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-03 17:20:54,185 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-12-03 17:20:54,186 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-03 17:20:54,187 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-12-03 17:20:54,187 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:20:54,190 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:20:54,191 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-12-03 17:20:54,193 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:20:54 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:20:54,193 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-12-03 17:20:54,194 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:20:54 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:20:54,194 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-12-03 17:20:54,194 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:20:54 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:20:54,195 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-12-03 17:20:54,195 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:20:54 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:20:54,195 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-12-03 17:20:54,196 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:20:54 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:20:59,204 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:20:59,206 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:20:59,216 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:20:59,229 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:20:59,233 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-03 17:20:59,235 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:20:59,239 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-03 17:20:59,239 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:20:59,245 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:20:59,246 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-03 17:20:59,247 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:59 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:20:59,247 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-03 17:20:59,248 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:59 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:20:59,248 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-03 17:20:59,248 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:59 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:20:59,248 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-03 17:20:59,250 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:59 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:20:59,251 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-03 17:20:59,253 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:20:59 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:04,260 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:21:04,264 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:21:04,275 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:04,282 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:04,284 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:21:04,286 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:04,289 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:21:04,289 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:04,289 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:04,290 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:21:04,291 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:04 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:04,292 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:21:04,293 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:04 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:04,294 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:21:04,295 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:04 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:04,297 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:21:04,297 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:04 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:04,297 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:21:04,298 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:04 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:09,304 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-03 17:21:09,307 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-03 17:21:09,324 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:09,329 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-03 17:21:09,335 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-12-03 17:21:09,337 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-03 17:21:09,338 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-12-03 17:21:09,338 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:09,341 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:09,342 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-12-03 17:21:09,344 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:21:09 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:09,344 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-12-03 17:21:09,345 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:21:09 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:09,345 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-12-03 17:21:09,346 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:21:09 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:09,347 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-12-03 17:21:09,350 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:21:09 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:09,350 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-12-03 17:21:09,351 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:21:09 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:14,362 DEBUG o.m.Controller [pool-2-thread-4] Starting controller
+2022-12-03 17:21:14,365 DEBUG o.m.Controller [pool-2-thread-4] getting sensor list
+2022-12-03 17:21:14,371 DEBUG o.m.Controller [pool-2-thread-4] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:14,378 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 0 = 0
+2022-12-03 17:21:14,380 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 18 < 20
+2022-12-03 17:21:14,381 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 0 = 0
+2022-12-03 17:21:14,386 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 18 > 8
+2022-12-03 17:21:14,386 DEBUG o.m.Controller [pool-2-thread-4] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:14,387 DEBUG o.m.Controller [pool-2-thread-4] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:14,388 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->humidity
+2022-12-03 17:21:14,393 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sat Dec 03 17:21:14 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:14,394 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->windowstatus
+2022-12-03 17:21:14,395 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sat Dec 03 17:21:14 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:14,396 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->awnings
+2022-12-03 17:21:14,397 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sat Dec 03 17:21:14 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:14,397 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->temperature
+2022-12-03 17:21:14,398 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sat Dec 03 17:21:14 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:14,398 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->sunposition
+2022-12-03 17:21:14,399 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sat Dec 03 17:21:14 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:19,405 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:21:19,415 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:21:19,427 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:19,442 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:21:19,445 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-03 17:21:19,447 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:21:19,447 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-03 17:21:19,448 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:19,450 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:19,450 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-03 17:21:19,452 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:21:19 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:19,452 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-03 17:21:19,454 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:21:19 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:19,454 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-03 17:21:19,455 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:21:19 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:19,455 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-03 17:21:19,456 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:21:19 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:19,457 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-03 17:21:19,457 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:21:19 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:24,465 DEBUG o.m.Controller [pool-2-thread-5] Starting controller
+2022-12-03 17:21:24,475 DEBUG o.m.Controller [pool-2-thread-5] getting sensor list
+2022-12-03 17:21:24,491 DEBUG o.m.Controller [pool-2-thread-5] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:24,495 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 0 = 0
+2022-12-03 17:21:24,496 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 18 < 20
+2022-12-03 17:21:24,497 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 0 = 0
+2022-12-03 17:21:24,497 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 18 > 8
+2022-12-03 17:21:24,497 DEBUG o.m.Controller [pool-2-thread-5] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:24,498 DEBUG o.m.Controller [pool-2-thread-5] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:24,498 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->humidity
+2022-12-03 17:21:24,499 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sat Dec 03 17:21:24 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:24,499 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->windowstatus
+2022-12-03 17:21:24,499 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sat Dec 03 17:21:24 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:24,499 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->awnings
+2022-12-03 17:21:24,500 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sat Dec 03 17:21:24 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:24,500 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->temperature
+2022-12-03 17:21:24,500 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sat Dec 03 17:21:24 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:24,500 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->sunposition
+2022-12-03 17:21:24,500 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sat Dec 03 17:21:24 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:29,506 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:21:29,508 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:21:29,513 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:29,517 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:29,519 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:21:29,521 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:29,522 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:21:29,522 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:29,523 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:29,523 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:21:29,523 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:29 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:29,523 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:21:29,525 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:29 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:29,525 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:21:29,525 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:29 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:29,525 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:21:29,526 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:29 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:29,526 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:21:29,526 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:29 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:34,534 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:21:34,541 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:21:34,553 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:34,559 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:34,560 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:21:34,560 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:34,561 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:21:34,561 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:34,564 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:34,564 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:21:34,567 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:34 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:34,568 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:21:34,571 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:34 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:34,571 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:21:34,571 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:34 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:34,572 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:21:34,572 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:34 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:34,572 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:21:34,573 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:34 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:39,579 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:21:39,581 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:21:39,591 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:39,596 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:39,598 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:21:39,598 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:39,599 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:21:39,599 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:39,604 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:39,604 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:21:39,609 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:39 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:39,609 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:21:39,610 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:39 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:39,610 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:21:39,616 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:39 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:39,616 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:21:39,617 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:39 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:39,618 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:21:39,619 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:39 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:44,625 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:21:44,626 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:21:44,660 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:44,665 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:44,666 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:21:44,667 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:44,668 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:21:44,668 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:44,669 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:44,669 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:21:44,670 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:44 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:44,671 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:21:44,671 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:44 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:44,671 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:21:44,672 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:44 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:44,672 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:21:44,675 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:44 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:44,676 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:21:44,678 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:44 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:49,686 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:21:49,688 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:21:49,702 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:49,707 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:49,709 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:21:49,713 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:49,716 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:21:49,717 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:49,719 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:49,719 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:21:49,720 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:49 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:49,720 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:21:49,721 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:49 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:49,721 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:21:49,723 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:49 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:49,723 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:21:49,723 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:49 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:49,724 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:21:49,724 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:49 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:54,732 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:21:54,735 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:21:54,749 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:54,758 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:54,762 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:21:54,766 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:54,768 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:21:54,768 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:54,768 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:54,769 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:21:54,769 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:54 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:54,769 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:21:54,772 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:54 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:54,773 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:21:54,775 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:54 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:54,775 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:21:54,776 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:54 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:54,776 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:21:54,777 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:54 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:21:59,786 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:21:59,787 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:21:59,793 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:21:59,806 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:59,808 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:21:59,809 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:21:59,809 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:21:59,810 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:21:59,810 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:21:59,810 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:21:59,812 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:59 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:21:59,812 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:21:59,817 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:59 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:21:59,818 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:21:59,821 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:59 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:21:59,822 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:21:59,823 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:59 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:21:59,823 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:21:59,824 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:21:59 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:22:04,828 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:22:04,831 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:22:04,846 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:22:04,852 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:22:04,853 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:22:04,854 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:22:04,856 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:22:04,856 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:22:04,859 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:22:04,859 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:22:04,860 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:04 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:22:04,860 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:22:04,861 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:04 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:22:04,862 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:22:04,864 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:04 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:22:04,864 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:22:04,865 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:04 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:22:04,865 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:22:04,865 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:04 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:22:09,872 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:22:09,874 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:22:09,884 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:22:09,894 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:22:09,897 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:22:09,898 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:22:09,903 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:22:09,903 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:22:09,904 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:22:09,904 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:22:09,904 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:09 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:22:09,905 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:22:09,905 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:09 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:22:09,905 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:22:09,905 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:09 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:22:09,905 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:22:09,907 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:09 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:22:09,907 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:22:09,908 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:09 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:22:14,915 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:22:14,916 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:22:14,928 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:22:14,943 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:22:14,945 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:22:14,946 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:22:14,946 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:22:14,946 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:22:14,946 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:22:14,946 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:22:14,946 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:14 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:22:14,946 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:22:14,947 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:14 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:22:14,947 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:22:14,947 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:14 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:22:14,947 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:22:14,948 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:14 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:22:14,948 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:22:14,948 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:14 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:22:19,954 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:22:19,956 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:22:19,969 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:22:19,977 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:22:19,977 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:22:19,978 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:22:19,979 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:22:19,979 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:22:19,979 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:22:19,980 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:22:19,981 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:19 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:22:19,981 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:22:19,982 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:19 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:22:19,982 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:22:19,982 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:19 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:22:19,982 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:22:19,982 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:19 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:22:19,983 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:22:19,983 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:22:19 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:26:54,403 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-03 17:26:54,411 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-03 17:26:54,411 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-03 17:26:54,413 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-03 17:26:54,414 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:26:54,420 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:26:54,498 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:26:54,507 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:26:59,534 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:26:59,536 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:26:59,560 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:26:59,570 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:27:04,579 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-03 17:27:04,580 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-03 17:27:04,600 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:27:04,605 ERROR o.m.Controller [pool-2-thread-2] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:28:29,588 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-03 17:28:29,591 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-03 17:28:29,592 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-03 17:28:29,593 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-03 17:28:29,593 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:28:29,618 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:28:29,690 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:28:29,695 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:28:34,734 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:28:34,735 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:28:34,739 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:28:34,744 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:28:39,752 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-03 17:28:39,754 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-03 17:28:39,772 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:28:39,780 ERROR o.m.Controller [pool-2-thread-2] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:28:44,787 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:28:44,787 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:28:44,793 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:28:44,797 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:28:49,803 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:28:49,804 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:28:49,808 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:28:49,815 ERROR o.m.Controller [pool-2-thread-3] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:28:54,821 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-03 17:28:54,824 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-03 17:28:54,829 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:28:54,831 ERROR o.m.Controller [pool-2-thread-2] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:28:59,838 DEBUG o.m.Controller [pool-2-thread-4] Starting controller
+2022-12-03 17:28:59,840 DEBUG o.m.Controller [pool-2-thread-4] getting sensor list
+2022-12-03 17:28:59,849 DEBUG o.m.Controller [pool-2-thread-4] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:28:59,864 ERROR o.m.Controller [pool-2-thread-4] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:29:04,875 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:29:04,876 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:29:04,891 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:29:04,907 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:29:09,912 DEBUG o.m.Controller [pool-2-thread-5] Starting controller
+2022-12-03 17:29:09,913 DEBUG o.m.Controller [pool-2-thread-5] getting sensor list
+2022-12-03 17:29:09,916 DEBUG o.m.Controller [pool-2-thread-5] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:29:09,919 ERROR o.m.Controller [pool-2-thread-5] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:32:38,864 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-03 17:32:38,867 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-03 17:32:38,867 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-03 17:32:38,869 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-03 17:32:38,869 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:32:38,877 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:32:38,956 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:32:38,961 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:32:43,996 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:32:44,000 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:32:44,009 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:32:44,019 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:33:36,970 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-03 17:33:36,980 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-03 17:33:36,981 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-03 17:33:36,982 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-03 17:33:37,626 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:33:39,009 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:33:49,510 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:35:08,628 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:168) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:114) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:84) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:35:21,822 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-03 17:35:21,834 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-03 17:35:21,835 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-03 17:35:21,838 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-03 17:35:22,728 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:35:24,660 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:35:31,792 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:39:06,516 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.readable.Readable.getValue()" because "r" is null
+	at org.maxmcold.rules.Rule.evalStatement(Rule.java:169) ~[classes/:?]
+	at org.maxmcold.rules.Rule.runConditions(Rule.java:115) ~[classes/:?]
+	at org.maxmcold.rules.Rule.execute(Rule.java:86) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:52) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-03 17:39:24,039 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-03 17:39:24,042 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-03 17:39:24,042 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-03 17:39:24,044 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-03 17:39:24,044 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:39:24,049 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:39:24,136 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:39:24,160 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:24,163 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:24,164 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-03 17:39:24,166 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:24,167 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-03 17:39:24,169 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:39:24,173 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:39:24,173 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-03 17:39:24,174 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:24 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:39:24,175 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-03 17:39:24,175 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:24 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:39:24,175 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-03 17:39:24,176 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:24 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:39:24,176 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-03 17:39:24,180 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:24 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:39:24,180 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-03 17:39:24,182 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:24 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:39:29,191 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:39:29,193 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:39:29,206 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:39:29,223 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:29,225 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:29,226 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-03 17:39:29,230 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:29,231 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-03 17:39:29,232 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:39:29,234 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:39:29,234 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-03 17:39:29,236 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:29 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:39:29,236 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-03 17:39:29,237 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:29 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:39:29,237 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-03 17:39:29,238 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:29 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:39:29,238 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-03 17:39:29,239 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:29 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:39:29,239 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-03 17:39:29,240 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:29 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:39:34,249 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-03 17:39:34,256 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-03 17:39:34,273 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:39:34,280 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-03 17:39:34,281 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-03 17:39:34,283 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-12-03 17:39:34,285 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-03 17:39:34,286 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-12-03 17:39:34,287 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:39:34,295 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:39:34,295 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-12-03 17:39:34,297 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:39:34 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:39:34,298 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-12-03 17:39:34,300 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:39:34 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:39:34,300 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-12-03 17:39:34,301 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:39:34 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:39:34,301 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-12-03 17:39:34,301 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:39:34 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:39:34,302 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-12-03 17:39:34,303 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sat Dec 03 17:39:34 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:39:39,310 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:39:39,312 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:39:39,327 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:39:39,340 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:39,341 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:39,342 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-03 17:39:39,344 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 17:39:39,345 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-03 17:39:39,346 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:39:39,349 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:39:39,349 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-03 17:39:39,351 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:39 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:39:39,351 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-03 17:39:39,353 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:39 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:39:39,353 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-03 17:39:39,354 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:39 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:39:39,355 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-03 17:39:39,356 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:39 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:39:39,356 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-03 17:39:39,356 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sat Dec 03 17:39:39 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:39:44,361 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-03 17:39:44,363 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-03 17:39:44,370 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 17:39:44,377 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:39:44,379 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:39:44,381 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-03 17:39:44,382 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-03 17:39:44,383 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-03 17:39:44,383 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 17:39:44,384 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 17:39:44,384 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-03 17:39:44,387 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:39:44 CET 2022 value:  Value: {humid.sala=12}
+2022-12-03 17:39:44,387 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-03 17:39:44,388 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:39:44 CET 2022 value:  Value: {wstat1=0}
+2022-12-03 17:39:44,389 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-03 17:39:44,390 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:39:44 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-03 17:39:44,390 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-03 17:39:44,391 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:39:44 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-03 17:39:44,392 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-03 17:39:44,393 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sat Dec 03 17:39:44 CET 2022 value:  Value: {sun1=0}
+2022-12-03 17:59:49,374 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-03 17:59:49,376 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-03 17:59:49,376 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-03 17:59:49,377 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-03 17:59:49,377 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-03 17:59:49,382 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-03 17:59:49,465 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-03 18:00:12,999 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 18:00:13,002 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 18:00:13,005 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-03 18:00:13,006 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-03 18:00:13,009 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-03 18:00:13,010 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${action.boiler->switchOn}
+2022-12-03 18:00:13,013 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-03 18:00:13,014 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-04 08:15:14,039 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.substring(int, int)" because "type" is null
+java.lang.NullPointerException: Cannot invoke "String.substring(int, int)" because "type" is null
+	at org.maxmcold.io.OutputWriterFactory.buildClassName(OutputWriterFactory.java:31) ~[classes/:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:21) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:46) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:16:07,984 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.substring(int, int)" because "type" is null
+java.lang.NullPointerException: Cannot invoke "String.substring(int, int)" because "type" is null
+	at org.maxmcold.io.OutputWriterFactory.buildClassName(OutputWriterFactory.java:31) ~[classes/:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:21) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:46) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:17:09,421 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.substring(int, int)" because "type" is null
+java.lang.NullPointerException: Cannot invoke "String.substring(int, int)" because "type" is null
+	at org.maxmcold.io.OutputWriterFactory.buildClassName(OutputWriterFactory.java:31) ~[classes/:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:21) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:46) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:21:48,816 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:21:48,820 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:21:48,820 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:21:48,821 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:22:46,788 ERROR o.m.Controller [pool-2-thread-1] org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+java.lang.NoSuchMethodException: org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+	at java.lang.Class.getConstructor0(Class.java:3585) ~[?:?]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[?:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:25) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:47) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:24:26,520 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:24:26,523 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:24:26,524 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:24:26,525 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:24:26,530 ERROR o.m.Controller [pool-2-thread-1] org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+java.lang.NoSuchMethodException: org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+	at java.lang.Class.getConstructor0(Class.java:3585) ~[?:?]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[?:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:25) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:47) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:24:31,562 ERROR o.m.Controller [pool-2-thread-1] org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+java.lang.NoSuchMethodException: org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+	at java.lang.Class.getConstructor0(Class.java:3585) ~[?:?]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[?:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:25) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:47) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:24:36,573 ERROR o.m.Controller [pool-2-thread-2] org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+java.lang.NoSuchMethodException: org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+	at java.lang.Class.getConstructor0(Class.java:3585) ~[?:?]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[?:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:25) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:47) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:24:41,580 ERROR o.m.Controller [pool-2-thread-1] org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+java.lang.NoSuchMethodException: org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+	at java.lang.Class.getConstructor0(Class.java:3585) ~[?:?]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[?:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:25) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:47) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:25:20,588 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:25:20,590 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:25:20,591 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:25:20,592 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:28:32,837 ERROR o.m.Controller [pool-2-thread-1] org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+java.lang.NoSuchMethodException: org.maxmcold.io.FileOutputWriter.<init>(java.lang.String)
+	at java.lang.Class.getConstructor0(Class.java:3585) ~[?:?]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[?:?]
+	at org.maxmcold.io.OutputWriterFactory.getOutputWriter(OutputWriterFactory.java:25) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:47) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:28:45,692 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:28:45,694 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:28:45,694 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:28:45,697 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:28:45,700 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.items.Item$Status.ordinal()" because the return value of "org.maxmcold.items.Item.getStatus()" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.items.Item$Status.ordinal()" because the return value of "org.maxmcold.items.Item.getStatus()" is null
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:28:50,735 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.items.Item$Status.ordinal()" because the return value of "org.maxmcold.items.Item.getStatus()" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.items.Item$Status.ordinal()" because the return value of "org.maxmcold.items.Item.getStatus()" is null
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:28:55,742 ERROR o.m.Controller [pool-2-thread-2] Cannot invoke "org.maxmcold.items.Item$Status.ordinal()" because the return value of "org.maxmcold.items.Item.getStatus()" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.items.Item$Status.ordinal()" because the return value of "org.maxmcold.items.Item.getStatus()" is null
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:29:00,751 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "org.maxmcold.items.Item$Status.ordinal()" because the return value of "org.maxmcold.items.Item.getStatus()" is null
+java.lang.NullPointerException: Cannot invoke "org.maxmcold.items.Item$Status.ordinal()" because the return value of "org.maxmcold.items.Item.getStatus()" is null
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:33:52,001 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:33:52,003 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:33:52,003 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:33:52,005 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:33:52,010 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:33:57,042 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:34:02,051 ERROR o.m.Controller [pool-2-thread-2] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:34:07,060 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:34:12,066 ERROR o.m.Controller [pool-2-thread-3] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:34:17,076 ERROR o.m.Controller [pool-2-thread-2] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:34:22,089 ERROR o.m.Controller [pool-2-thread-4] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:34:27,096 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:34:32,102 ERROR o.m.Controller [pool-2-thread-5] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:45) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:39:54,644 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:39:54,647 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:39:54,647 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:39:54,649 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:40:32,515 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:42) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:42:05,304 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:42:05,307 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:42:05,307 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:42:05,309 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:42:33,557 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:46) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:42:54,398 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:42:54,400 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:42:54,401 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:42:54,402 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:43:42,613 ERROR o.m.Controller [pool-2-thread-1] Cannot invoke "String.hashCode()" because "<local1>" is null
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "<local1>" is null
+	at org.maxmcold.items.Boiler.getStatus(Boiler.java:46) ~[classes/:?]
+	at org.maxmcold.io.FileOutputWriter.write(FileOutputWriter.java:24) ~[classes/:?]
+	at org.maxmcold.Controller.run(Controller.java:48) [classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2022-12-04 08:49:50,621 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:49:50,626 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:49:50,626 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:49:50,628 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:49:50,669 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-04 08:49:50,673 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-04 08:49:50,742 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:49:50,755 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:49:50,757 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:49:50,758 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-04 08:49:50,761 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:49:50,761 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-04 08:49:50,761 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:49:50,764 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:49:50,764 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-04 08:49:50,765 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:50 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:49:50,765 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-04 08:49:50,767 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:50 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:49:50,767 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-04 08:49:50,768 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:50 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:49:50,768 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-04 08:49:50,769 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:50 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:49:50,769 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-04 08:49:50,770 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:50 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:49:55,778 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-04 08:49:55,780 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-04 08:49:55,786 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:49:55,803 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:49:55,806 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:49:55,808 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-04 08:49:55,809 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:49:55,813 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-04 08:49:55,814 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:49:55,816 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:49:55,816 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-04 08:49:55,819 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:55 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:49:55,819 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-04 08:49:55,821 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:55 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:49:55,821 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-04 08:49:55,822 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:55 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:49:55,822 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-04 08:49:55,823 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:55 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:49:55,824 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-04 08:49:55,825 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:49:55 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:00,836 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-04 08:50:00,839 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-04 08:50:00,855 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:00,862 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:50:00,864 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:50:00,865 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-12-04 08:50:00,868 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:50:00,869 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-12-04 08:50:00,870 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:00,879 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:00,880 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-12-04 08:50:00,883 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:00 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:00,883 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-12-04 08:50:00,884 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:00 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:00,884 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-12-04 08:50:00,885 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:00 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:00,885 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-12-04 08:50:00,885 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:00 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:00,886 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-12-04 08:50:00,887 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:00 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:05,897 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-04 08:50:05,900 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-04 08:50:05,925 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:05,932 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:50:05,933 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:50:05,934 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-04 08:50:05,935 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:50:05,936 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-04 08:50:05,936 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:05,939 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:05,940 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-04 08:50:05,940 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:05 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:05,940 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-04 08:50:05,941 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:05 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:05,941 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-04 08:50:05,942 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:05 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:05,943 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-04 08:50:05,944 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:05 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:05,944 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-04 08:50:05,945 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:05 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:10,955 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-04 08:50:10,958 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-04 08:50:10,971 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:10,979 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:10,984 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:10,985 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-04 08:50:10,986 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:10,987 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-04 08:50:10,987 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:10,992 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:10,993 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-04 08:50:10,995 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:10 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:10,995 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-04 08:50:10,997 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:10 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:10,998 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-04 08:50:10,999 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:10 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:10,999 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-04 08:50:11,000 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:11 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:11,000 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-04 08:50:11,000 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:11 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:16,008 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-04 08:50:16,012 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-04 08:50:16,022 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:16,030 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:50:16,031 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:50:16,035 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-12-04 08:50:16,038 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:50:16,039 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-12-04 08:50:16,039 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:16,041 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:16,042 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-12-04 08:50:16,045 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:16 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:16,045 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-12-04 08:50:16,046 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:16 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:16,047 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-12-04 08:50:16,048 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:16 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:16,049 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-12-04 08:50:16,049 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:16 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:16,050 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-12-04 08:50:16,051 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:50:16 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:21,065 DEBUG o.m.Controller [pool-2-thread-4] Starting controller
+2022-12-04 08:50:21,068 DEBUG o.m.Controller [pool-2-thread-4] getting sensor list
+2022-12-04 08:50:21,075 DEBUG o.m.Controller [pool-2-thread-4] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:21,092 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 0 = 0
+2022-12-04 08:50:21,096 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 0 = 0
+2022-12-04 08:50:21,097 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 18 < 20
+2022-12-04 08:50:21,098 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 0 = 0
+2022-12-04 08:50:21,100 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 18 > 8
+2022-12-04 08:50:21,100 DEBUG o.m.Controller [pool-2-thread-4] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:21,103 DEBUG o.m.Controller [pool-2-thread-4] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:21,104 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->humidity
+2022-12-04 08:50:21,111 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:50:21 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:21,112 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->windowstatus
+2022-12-04 08:50:21,113 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:50:21 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:21,114 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->awnings
+2022-12-04 08:50:21,114 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:50:21 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:21,114 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->temperature
+2022-12-04 08:50:21,116 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:50:21 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:21,117 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->sunposition
+2022-12-04 08:50:21,118 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:50:21 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:26,127 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-04 08:50:26,128 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-04 08:50:26,138 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:26,159 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:50:26,160 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:50:26,161 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-04 08:50:26,162 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:50:26,163 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-04 08:50:26,165 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:26,167 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:26,168 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-04 08:50:26,169 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:26 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:26,169 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-04 08:50:26,169 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:26 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:26,169 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-04 08:50:26,170 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:26 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:26,170 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-04 08:50:26,170 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:26 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:26,171 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-04 08:50:26,172 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:50:26 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:31,180 DEBUG o.m.Controller [pool-2-thread-5] Starting controller
+2022-12-04 08:50:31,182 DEBUG o.m.Controller [pool-2-thread-5] getting sensor list
+2022-12-04 08:50:31,198 DEBUG o.m.Controller [pool-2-thread-5] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:31,206 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 0 = 0
+2022-12-04 08:50:31,209 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 0 = 0
+2022-12-04 08:50:31,211 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 18 < 20
+2022-12-04 08:50:31,213 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 0 = 0
+2022-12-04 08:50:31,214 DEBUG o.m.r.Rule [pool-2-thread-5] EVALUATING IF 18 > 8
+2022-12-04 08:50:31,214 DEBUG o.m.Controller [pool-2-thread-5] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:31,217 DEBUG o.m.Controller [pool-2-thread-5] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:31,218 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->humidity
+2022-12-04 08:50:31,222 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sun Dec 04 08:50:31 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:31,223 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->windowstatus
+2022-12-04 08:50:31,225 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sun Dec 04 08:50:31 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:31,225 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->awnings
+2022-12-04 08:50:31,226 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sun Dec 04 08:50:31 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:31,226 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->temperature
+2022-12-04 08:50:31,226 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sun Dec 04 08:50:31 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:31,227 DEBUG o.m.Controller [pool-2-thread-5] sensor description --->sunposition
+2022-12-04 08:50:31,228 DEBUG o.m.Controller [pool-2-thread-5] beep :: Sun Dec 04 08:50:31 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:36,240 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-04 08:50:36,240 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-04 08:50:36,248 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:36,257 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:36,265 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:36,267 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-04 08:50:36,269 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:36,270 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-04 08:50:36,270 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:36,271 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:36,271 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-04 08:50:36,272 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:36 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:36,273 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-04 08:50:36,273 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:36 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:36,273 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-04 08:50:36,274 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:36 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:36,274 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-04 08:50:36,274 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:36 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:36,275 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-04 08:50:36,275 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:36 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:41,282 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-04 08:50:41,283 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-04 08:50:41,299 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:41,304 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:41,305 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:41,305 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-04 08:50:41,305 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:41,306 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-04 08:50:41,306 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:41,306 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:41,306 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-04 08:50:41,307 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:41 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:41,307 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-04 08:50:41,309 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:41 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:41,310 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-04 08:50:41,310 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:41 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:41,310 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-04 08:50:41,310 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:41 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:41,311 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-04 08:50:41,311 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:41 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:46,320 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-04 08:50:46,321 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-04 08:50:46,326 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:46,330 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:46,333 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:46,333 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-04 08:50:46,334 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:46,334 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-04 08:50:46,335 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:46,335 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:46,336 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-04 08:50:46,336 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:46 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:46,336 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-04 08:50:46,337 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:46 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:46,337 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-04 08:50:46,337 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:46 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:46,337 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-04 08:50:46,338 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:46 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:46,338 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-04 08:50:46,339 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:46 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:51,346 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-04 08:50:51,353 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-04 08:50:51,375 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:51,381 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:51,382 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:51,382 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-04 08:50:51,383 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:51,384 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-04 08:50:51,384 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:51,385 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:51,385 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-04 08:50:51,386 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:51 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:51,389 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-04 08:50:51,391 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:51 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:51,391 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-04 08:50:51,394 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:51 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:51,394 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-04 08:50:51,395 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:51 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:51,395 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-04 08:50:51,396 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:51 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:50:56,404 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-04 08:50:56,405 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-04 08:50:56,412 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:50:56,416 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:56,418 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:56,418 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-04 08:50:56,419 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:50:56,419 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-04 08:50:56,419 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:50:56,420 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:50:56,420 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-04 08:50:56,420 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:56 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:50:56,421 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-04 08:50:56,423 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:56 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:50:56,424 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-04 08:50:56,429 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:56 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:50:56,430 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-04 08:50:56,431 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:56 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:50:56,431 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-04 08:50:56,431 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:50:56 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:51:01,437 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-04 08:51:01,438 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-04 08:51:01,447 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:51:01,453 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:51:01,454 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:51:01,455 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-04 08:51:01,458 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:51:01,459 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-04 08:51:01,459 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:51:01,460 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:51:01,460 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-04 08:51:01,461 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:01 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:51:01,461 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-04 08:51:01,462 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:01 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:51:01,463 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-04 08:51:01,463 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:01 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:51:01,463 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-04 08:51:01,464 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:01 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:51:01,464 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-04 08:51:01,464 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:01 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:51:33,129 DEBUG o.m.u.CoolProperties [pool-2-thread-1] SETTING ROOT PATH...
+2022-12-04 08:51:33,132 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver
+2022-12-04 08:51:33,132 DEBUG o.m.u.CoolProperties [pool-2-thread-1] PRINTING RESOURCE PATH...
+2022-12-04 08:51:33,136 DEBUG o.m.u.CoolProperties [pool-2-thread-1] /Users/massimodelvecchio/IdeaProjects/CoolDriver/target/classes/config.properties
+2022-12-04 08:51:33,179 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-04 08:51:33,184 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-04 08:51:33,256 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:51:33,269 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:33,271 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:33,272 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-04 08:51:33,275 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:33,275 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-04 08:51:33,276 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:51:33,280 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:51:33,281 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-04 08:51:33,282 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:33 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:51:33,282 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-04 08:51:33,283 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:33 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:51:33,284 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-04 08:51:33,284 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:33 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:51:33,285 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-04 08:51:33,286 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:33 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:51:33,286 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-04 08:51:33,286 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:33 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:51:38,295 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-04 08:51:38,297 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-04 08:51:38,312 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:51:38,328 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:38,332 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:38,333 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-04 08:51:38,334 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:38,339 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-04 08:51:38,340 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:51:38,341 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:51:38,341 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-04 08:51:38,344 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:38 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:51:38,345 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-04 08:51:38,346 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:38 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:51:38,346 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-04 08:51:38,347 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:38 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:51:38,348 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-04 08:51:38,349 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:38 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:51:38,350 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-04 08:51:38,350 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:38 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:51:43,361 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-04 08:51:43,363 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-04 08:51:43,381 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:51:43,391 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:51:43,392 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:51:43,395 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-12-04 08:51:43,397 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:51:43,399 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-12-04 08:51:43,399 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:51:43,407 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:51:43,408 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-12-04 08:51:43,410 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:43 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:51:43,410 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-12-04 08:51:43,411 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:43 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:51:43,411 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-12-04 08:51:43,411 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:43 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:51:43,412 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-12-04 08:51:43,412 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:43 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:51:43,412 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-12-04 08:51:43,413 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:43 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:51:48,420 DEBUG o.m.Controller [pool-2-thread-1] Starting controller
+2022-12-04 08:51:48,427 DEBUG o.m.Controller [pool-2-thread-1] getting sensor list
+2022-12-04 08:51:48,445 DEBUG o.m.Controller [pool-2-thread-1] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:51:48,461 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:48,462 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:48,463 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 < 20
+2022-12-04 08:51:48,464 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 0 = 0
+2022-12-04 08:51:48,465 DEBUG o.m.r.Rule [pool-2-thread-1] EVALUATING IF 18 > 8
+2022-12-04 08:51:48,466 DEBUG o.m.Controller [pool-2-thread-1] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:51:48,468 DEBUG o.m.Controller [pool-2-thread-1] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:51:48,469 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->humidity
+2022-12-04 08:51:48,469 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:48 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:51:48,470 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->windowstatus
+2022-12-04 08:51:48,470 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:48 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:51:48,470 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->awnings
+2022-12-04 08:51:48,471 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:48 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:51:48,472 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->temperature
+2022-12-04 08:51:48,473 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:48 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:51:48,474 DEBUG o.m.Controller [pool-2-thread-1] sensor description --->sunposition
+2022-12-04 08:51:48,474 DEBUG o.m.Controller [pool-2-thread-1] beep :: Sun Dec 04 08:51:48 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:51:53,479 DEBUG o.m.Controller [pool-2-thread-3] Starting controller
+2022-12-04 08:51:53,482 DEBUG o.m.Controller [pool-2-thread-3] getting sensor list
+2022-12-04 08:51:53,489 DEBUG o.m.Controller [pool-2-thread-3] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:51:53,496 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:51:53,501 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:51:53,502 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 < 20
+2022-12-04 08:51:53,503 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 0 = 0
+2022-12-04 08:51:53,504 DEBUG o.m.r.Rule [pool-2-thread-3] EVALUATING IF 18 > 8
+2022-12-04 08:51:53,504 DEBUG o.m.Controller [pool-2-thread-3] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:51:53,507 DEBUG o.m.Controller [pool-2-thread-3] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:51:53,508 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->humidity
+2022-12-04 08:51:53,511 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:53 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:51:53,513 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->windowstatus
+2022-12-04 08:51:53,515 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:53 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:51:53,515 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->awnings
+2022-12-04 08:51:53,516 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:53 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:51:53,517 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->temperature
+2022-12-04 08:51:53,517 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:53 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:51:53,518 DEBUG o.m.Controller [pool-2-thread-3] sensor description --->sunposition
+2022-12-04 08:51:53,518 DEBUG o.m.Controller [pool-2-thread-3] beep :: Sun Dec 04 08:51:53 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:51:58,529 DEBUG o.m.Controller [pool-2-thread-2] Starting controller
+2022-12-04 08:51:58,530 DEBUG o.m.Controller [pool-2-thread-2] getting sensor list
+2022-12-04 08:51:58,538 DEBUG o.m.Controller [pool-2-thread-2] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:51:58,549 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:51:58,555 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:51:58,558 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 < 20
+2022-12-04 08:51:58,560 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 0 = 0
+2022-12-04 08:51:58,560 DEBUG o.m.r.Rule [pool-2-thread-2] EVALUATING IF 18 > 8
+2022-12-04 08:51:58,561 DEBUG o.m.Controller [pool-2-thread-2] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:51:58,564 DEBUG o.m.Controller [pool-2-thread-2] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:51:58,564 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->humidity
+2022-12-04 08:51:58,566 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:58 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:51:58,566 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->windowstatus
+2022-12-04 08:51:58,567 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:58 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:51:58,568 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->awnings
+2022-12-04 08:51:58,568 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:58 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:51:58,569 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->temperature
+2022-12-04 08:51:58,570 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:58 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:51:58,570 DEBUG o.m.Controller [pool-2-thread-2] sensor description --->sunposition
+2022-12-04 08:51:58,571 DEBUG o.m.Controller [pool-2-thread-2] beep :: Sun Dec 04 08:51:58 CET 2022 value:  Value: {sun1=0}
+2022-12-04 08:52:03,586 DEBUG o.m.Controller [pool-2-thread-4] Starting controller
+2022-12-04 08:52:03,590 DEBUG o.m.Controller [pool-2-thread-4] getting sensor list
+2022-12-04 08:52:03,598 DEBUG o.m.Controller [pool-2-thread-4] [[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK
+2022-12-04 08:52:03,603 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 0 = 0
+2022-12-04 08:52:03,605 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 0 = 0
+2022-12-04 08:52:03,606 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 18 < 20
+2022-12-04 08:52:03,607 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 0 = 0
+2022-12-04 08:52:03,608 DEBUG o.m.r.Rule [pool-2-thread-4] EVALUATING IF 18 > 8
+2022-12-04 08:52:03,608 DEBUG o.m.Controller [pool-2-thread-4] EVAL STATEMENT: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)} AND ${item.window.setPosition(32)}
+2022-12-04 08:52:03,610 DEBUG o.m.Controller [pool-2-thread-4] ]]]]]]]]]]] END CONDITION RECURSIVE CHECK
+2022-12-04 08:52:03,611 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->humidity
+2022-12-04 08:52:03,615 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:52:03 CET 2022 value:  Value: {humid.sala=12}
+2022-12-04 08:52:03,615 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->windowstatus
+2022-12-04 08:52:03,617 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:52:03 CET 2022 value:  Value: {wstat1=0}
+2022-12-04 08:52:03,617 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->awnings
+2022-12-04 08:52:03,617 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:52:03 CET 2022 value:  Value: {awning.sala=1100}
+2022-12-04 08:52:03,618 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->temperature
+2022-12-04 08:52:03,618 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:52:03 CET 2022 value:  Value: {temp2=25, temp3=18, temp1=20}
+2022-12-04 08:52:03,619 DEBUG o.m.Controller [pool-2-thread-4] sensor description --->sunposition
+2022-12-04 08:52:03,619 DEBUG o.m.Controller [pool-2-thread-4] beep :: Sun Dec 04 08:52:03 CET 2022 value:  Value: {sun1=0}

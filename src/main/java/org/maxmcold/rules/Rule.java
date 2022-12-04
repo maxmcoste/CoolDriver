@@ -72,18 +72,16 @@ public class Rule {
     public void execute() throws FileNotFoundException, RuleSyntaxError {
 
         RuleParser rp = new RuleParser();
-        try {
-            rp.parse(this);
-        } catch (FileNotFoundException e) {
-            logger.error(e);
-        } catch (RuleSyntaxError e) {
-            logger.error(e);
-        }
+        rp.parse(this);
+
+
+
         String when = rp.getWhenStatement();
+
         String then = rp.getThenStatement();
         if (null != when) runConditions(when);
-
         //TODO: execute then condition
+
 
 
     }
@@ -125,6 +123,7 @@ public class Rule {
 
         return out;
     }
+
     private String[] extractParams(String match){
 
         Pattern pattern = Pattern.compile("\\$\\{\\S*\\}");
@@ -199,7 +198,7 @@ public class Rule {
         if (ruleParam.substring(0,2).equals("${")) {
             ruleParam = ruleParam.substring(2);
         }
-        String paramLeftCut = ruleParam.substring(0,ruleParam.length()-2);
+        String paramLeftCut = ruleParam.substring(0,ruleParam.length()-1);
         if (paramLeftCut.equals("}")){
             ruleParam = paramLeftCut;
         }

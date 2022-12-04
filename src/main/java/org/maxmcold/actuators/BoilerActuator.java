@@ -7,7 +7,7 @@ import org.maxmcold.Controller;
 import java.util.HashMap;
 
 
-public class ThermoActuator implements Actuator {
+public class BoilerActuator implements Actuator {
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
     public int status = 0;

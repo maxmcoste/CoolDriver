@@ -49,15 +49,14 @@ public class RuleParser {
 
     }
 
-    private void setConditionStatements(){
+    private void setConditionStatements() {
+
         String[] tokens = ruleText.split("THEN");
         //TODO manager error condition
 
         this.whenStatement = tokens[0].substring(4).trim();
-        this.thenStatement = tokens[1].substring(4).trim();
+        this.thenStatement = tokens[1].trim();
     }
-
-
 
 
 
