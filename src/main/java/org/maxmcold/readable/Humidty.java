@@ -1,12 +1,13 @@
 package org.maxmcold.readable;
 
-import org.maxmcold.io.InputReader;
-import org.maxmcold.io.InputReaderFactory;
-import org.maxmcold.statuses.Status;
-
 import java.util.HashMap;
 
 public class Humidty implements Readable {
+    @Override
+    public long getLongValue() {
+        return 0;
+    }
+
     /**
      * Returns the last long value of input stream humidity written in the form:
      * key = <i>value</i>
@@ -19,15 +20,20 @@ public class Humidty implements Readable {
     public long getValue() {
 
         //TODO manage errors
-        ReadableImpl ri = new ReadableImpl(ReadableFactory.Type.HUMIDITY);
+        ReadableDefaultImpl ri = new ReadableDefaultImpl(ReadableFactory.Type.HUMIDITY);
         return ri.getValue();
     }
 
 
     @Override
     public HashMap<String, Object> getValues() {
-        ReadableImpl ri = new ReadableImpl(ReadableFactory.Type.HUMIDITY);
+        ReadableDefaultImpl ri = new ReadableDefaultImpl(ReadableFactory.Type.HUMIDITY);
         return ri.getValues();
+    }
+
+    @Override
+    public String getStringValue() {
+        return null;
     }
 }
 

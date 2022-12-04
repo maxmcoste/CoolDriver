@@ -12,16 +12,17 @@ public class ReadableFactory {
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
     public static Readable getReadable(Type readableType)  {
-
+        logger.debug("Calling readable with type "+readableType);
         //Set default Readable to temperature (most used)
-        Readable out = (Readable) new Temperature();
+        Readable out = new Temperature();
         switch (readableType){
 
-            case TEMPERATURE -> { out = (Readable) new Temperature();}
-            case HUMIDITY -> { out = (Readable) new Humidty();}
-            case SUNPOSITION -> {out = (Readable) new SunPosition();}
-            case WINDOWPOSITION -> {out = (Readable) new WindowPosition();}
-            case AWNINGINPUT -> {out = (Readable) new AwningPosition();}
+            case TEMPERATURE -> out = new Temperature();
+            case SUNPOSITION -> out = new SunPosition();
+            case HUMIDITY -> out = new Humidty();
+            case WINDOWPOSITION -> out = new WindowPosition();
+            case AWNINGINPUT -> out = new AwningPosition();
+            case BOILERSTATUS -> out = new BoilerStatus();
 
 
         }

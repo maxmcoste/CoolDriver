@@ -4,6 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.maxmcold.Controller;
 import org.maxmcold.errors.RuleSyntaxError;
+import org.maxmcold.io.OutputWriter;
+import org.maxmcold.items.Item;
+import org.maxmcold.items.ItemFactory;
 import org.maxmcold.readable.Readable;
 import org.maxmcold.readable.ReadableFactory;
 import org.maxmcold.utils.CoolProperties;
@@ -12,8 +15,12 @@ import org.yaml.snakeyaml.Yaml;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static java.lang.Class.forName;
 
 public class Rule {
 
@@ -69,22 +76,44 @@ public class Rule {
     private String areas;
     private String action;
 
-    public void execute() throws FileNotFoundException, RuleSyntaxError {
+    public void execute() throws FileNotFoundException, RuleSyntaxError, ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
 
         RuleParser rp = new RuleParser();
         rp.parse(this);
 
-
-
         String when = rp.getWhenStatement();
-
         String then = rp.getThenStatement();
-        if (null != when) runConditions(when);
-        //TODO: execute then condition
+        if (null == when) throw new RuleSyntaxError("When condition is null");
+
+
+        if (runConditions(when)){
+
+            //expected only one param in then statement
+            String param = extractParams(then)[0];
+            String untaggedParam = RuleParser.untagParam(param);
+            String itemName = untaggedParam.split("->")[0];
+            String actionName = untaggedParam.split("->")[1];
+            Item item = getItem(itemName);
+            String parameter = RuleParser.getActionParam(actionName);
+            String methodName = RuleParser.getActionName(actionName);
+
+            //TODO: define the position
+            Method method = Item.class.getMethod(methodName, Item.Status.class);
+            if (parameter.equals("ON"))
+                method.invoke(item, Item.Status.ON);
+            else if (parameter.equals("OFF"))
+                method.invoke(item, Item.Status.OFF);
+
+
+
+        }
+
 
 
 
     }
+
+
     private boolean runConditions(String when){
 
         when = when.trim();
@@ -138,6 +167,16 @@ public class Rule {
         return out.split(";");
     }
 
+    private Item getItem(String param) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+        Item item = null;
+        //TODO made simple now for testing reasons. To be abstracted in future
+        String[] tokens = param.split("\\.");
+        if (tokens[0].equals("item")){
+            item = ItemFactory.getItem(tokens[1].trim());
+        }
+        return item;
+
+    }
     private String extractOperator(String condition){
         String out = "";
         Pattern pattern = Pattern.compile("[<>=]");
@@ -151,6 +190,8 @@ public class Rule {
         return out;
 
     }
+
+
 
     private boolean evalStatement(String statement){
 

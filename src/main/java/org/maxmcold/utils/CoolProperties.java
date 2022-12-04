@@ -50,6 +50,10 @@ public class CoolProperties {
     public static String boilerWriterFile;
 
     public static String ruleConfigFile;
+    public static String boilerReadType;
+    public static String boilerReaderURL;
+    public static String delay;
+    public static String boilerFieldName;
 
     public static Properties getProperties() throws IOException {
 
@@ -79,6 +83,7 @@ public class CoolProperties {
         currentConfig = prop.getProperty("currentConfig");
         activeSensor = prop.getProperty("base.controller.activeSensors");
         ruleConfigFile = prop.getProperty("rule.config.file");
+        delay = prop.getProperty("read.interval");
 
         //Configure all properties from file
         temperatureFieldName = prop.getProperty("temperature.field.name");
@@ -86,6 +91,8 @@ public class CoolProperties {
         awningsFieldName = prop.getProperty("awnings.field.name");
         sunFieldName = prop.getProperty("sun.field.name");
         windowstatusFieldName = prop.getProperty("windowstatus.field.name");
+        boilerFieldName = prop.getProperty("boiler.field.name");
+
 
         temperatureCodeName = prop.getProperty("temperature.code.name");
         humidityCodeName = prop.getProperty("humidity.code.name");
@@ -94,22 +101,25 @@ public class CoolProperties {
         sunCodeName = prop.getProperty("sun.code.name");
 
         sensorTemperatureStreamType = prop.getProperty("sensor.temperature.stream.type");
-        sensorTemperatureStreamTypeFileName = prop.getProperty("sensor.temperature.stream.type.file.name");
+        sensorTemperatureStreamTypeFileName = prop.getProperty("sensor.temperature.stream.type.uri.name");
 
         sensorHumidityStreamType = prop.getProperty("sensor.humidity.stream.type");
-        sensorHumidityStreamTypeFileName = prop.getProperty("sensor.humidity.stream.type.file.name");
+        sensorHumidityStreamTypeFileName = prop.getProperty("sensor.humidity.stream.type.uri.name");
 
         sensorSunStreamType = prop.getProperty("sensor.sunposition.stream.type");
-        sensorSunStreamTypeFileName = prop.getProperty("sensor.sunposition.stream.type.file.name");
+        sensorSunStreamTypeFileName = prop.getProperty("sensor.sunposition.stream.type.uri.name");
 
         sensorAwningsStreamType = prop.getProperty("sensor.awnings.stream.type");
-        sensorAwningsStreamTypeFileName = prop.getProperty("sensor.awnings.stream.type.file.name");
+        sensorAwningsStreamTypeFileName = prop.getProperty("sensor.awnings.stream.type.uri.name");
 
         sensorWindowstatusStreamType = prop.getProperty("sensor.windowstatus.stream.type");
-        sensorWindowstatusStreamTypeFileName = prop.getProperty("sensor.windowstatus.stream.type.file.name");
+        sensorWindowstatusStreamTypeFileName = prop.getProperty("sensor.windowstatus.stream.type.uri.name");
 
         boilerWriterType = prop.getProperty("item.boiler.write.type");
-        boilerWriterFile = prop.getProperty("item.boiler.file.name");
+        boilerWriterFile = prop.getProperty("item.boiler.filewriter.file.name");
+
+        boilerReadType = prop.getProperty("sensor.boiler.stream.type");
+        boilerReaderURL = prop.getProperty("sensor.boiler.stream.type.uri.name");
 
         instance = prop;
         return instance;
@@ -129,7 +139,8 @@ public class CoolProperties {
         } catch (IOException e) {
             logger.debug(e.getMessage());
         }
-        String key = "sensor." +type+".stream.type.file.name";
+        //TODO change this logic... too much coupled to config logic
+        String key = "sensor." +type+".stream.type.uri.name";
         return prop.getProperty(key);
     }
 
