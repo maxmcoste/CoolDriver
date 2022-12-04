@@ -18,8 +18,9 @@ public class FileOutputWriter implements OutputWriter{
     @Override
     public boolean write(Item item) throws IOException {
 
-
-        BufferedWriter writer = new BufferedWriter(new FileWriter(item.getWriterURL()));
+        String fileName = item.getWriterURL();
+        if (null == fileName) throw new IOException("Missine filename for writer, check your configuration file");
+        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
         String status = "ON";
         switch (item.getStatus()){
             case ON -> status = "ON";

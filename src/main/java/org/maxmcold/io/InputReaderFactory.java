@@ -42,6 +42,10 @@ public class InputReaderFactory {
                     tmp = CoolProperties.sensorSunStreamType;
                     readType = CoolProperties.sunFieldName;
                 }
+                case BOILERSTATUS -> {
+                    tmp = CoolProperties.boilerReadType;
+                    readType = CoolProperties.boilerFieldName;
+                }
             }
 
             String packageName = InputReaderFactory.class.getPackageName();

@@ -17,8 +17,8 @@ public class FileInputReader implements InputReader {
 
     @Override
     public List<Long> getLongValues(){
-       List<Long> out = new ArrayList<Long>();
-       return out;
+
+       return new ArrayList<>();
     }
     @Override
     public HashMap<String, String> getAttributes(){
@@ -39,14 +39,13 @@ public class FileInputReader implements InputReader {
     public Object getValue(){
         String out = null;
         try {
-
+            if (null == this.fileName) throw new IOException("Missing filename "+this.fileName+" - check your conf file");
             File f = new File(this.fileName);
+            if (null == f) throw new IOException("Missing filename "+this.fileName+" - check your conf file");
             BufferedReader br = new BufferedReader(new FileReader(f));
             out = br.readLine();
             br.close();
 
-        } catch (FileNotFoundException e) {
-            logger.error(e.getMessage());
         } catch (IOException e) {
             logger.error(e.getMessage());
         }
@@ -54,16 +53,6 @@ public class FileInputReader implements InputReader {
     }
 
     public HashMap<String, Object> getValues(){
-
-
-        return  this.values;
-    }
-
-    public FileInputReader(String valueType){
-
-        this.readerType = "file";
-
-        this.fileName = CoolProperties.getFileName(valueType);
 
         try {
 
@@ -79,16 +68,16 @@ public class FileInputReader implements InputReader {
             }
             br.close();
 
-        } catch (FileNotFoundException e) {
-            logger.error(e.getMessage());
-
         } catch (IOException e) {
             logger.error(e.getMessage());
         }
+        return this.values;
+    }
 
+    public FileInputReader(String valueType){
 
-
-
+        this.readerType = "file";
+        this.fileName = CoolProperties.getFileName(valueType);
     }
 
     private String[] getData(String line){
@@ -103,60 +92,7 @@ public class FileInputReader implements InputReader {
 
 
 
-    private String getAwningsValue(){
-        String out = null;
-        try {
 
-            File f = new File(CoolProperties.sensorAwningsStreamTypeFileName);
-            BufferedReader br = new BufferedReader(new FileReader(f));
-            out = br.readLine();
-            br.close();
 
-        } catch (FileNotFoundException e) {
-            logger.error(e.getMessage());
-        } catch (IOException e) {
-            logger.error(e.getMessage());
-        }
-        return out;
-    }
 
-    private Long getValue(String fieldName){
-        Long longValue = null;
-        try {
-            File f = new File(this.fileName);
-            BufferedReader br = new BufferedReader(new FileReader(f));
-            String in = br.readLine();
-            longValue = Long.parseLong(in);
-            br.close();
-
-        } catch (FileNotFoundException e) {
-            logger.error(e.getMessage());
-
-        } catch (IOException e) {
-            logger.error(e.getMessage());
-        }
-        return longValue;
-
-    }
-    private Long getTemperature(){
-        Long longValue = null;
-        try {
-
-            String filename = CoolProperties.sensorTemperatureStreamTypeFileName;
-            File f = new File(filename);
-            logger.debug("Start reading from file..." + f);
-            BufferedReader br = new BufferedReader(new FileReader(f));
-            String in = br.readLine();
-            logger.debug("in value:" + in);
-             //readable.setDescription("Check input temperature");
-            longValue = Long.parseLong(in);
-            br.close();
-
-        } catch (FileNotFoundException e) {
-            logger.error(e.getMessage());
-        } catch (IOException e) {
-            logger.error(e.getMessage());
-        }
-        return longValue;
-    }
 }

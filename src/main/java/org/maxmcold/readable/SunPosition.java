@@ -10,10 +10,15 @@ public class SunPosition implements Readable{
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
 
     @Override
+    public long getLongValue() {
+        return 0;
+    }
+
+    @Override
     public long getValue() {
 
         //TODO manage errors
-        ReadableImpl ri = new ReadableImpl(ReadableFactory.Type.SUNPOSITION);
+        ReadableDefaultImpl ri = new ReadableDefaultImpl(ReadableFactory.Type.SUNPOSITION);
         if (null == ri) {
             logger.debug("READABLE: SUNPOSITION IS NULL");
         }
@@ -23,7 +28,12 @@ public class SunPosition implements Readable{
 
     @Override
     public HashMap<String, Object> getValues() {
-        ReadableImpl ri = new ReadableImpl(ReadableFactory.Type.SUNPOSITION);
+        ReadableDefaultImpl ri = new ReadableDefaultImpl(ReadableFactory.Type.SUNPOSITION);
         return ri.getValues();
+    }
+
+    @Override
+    public String getStringValue() {
+        return null;
     }
 }

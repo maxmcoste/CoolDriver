@@ -6,7 +6,7 @@ import org.maxmcold.statuses.Status;
 
 import java.util.HashMap;
 
-public class ReadableImpl implements Readable{
+public class ReadableDefaultImpl implements Readable{
     /**
      * Returns the last long value of input stream temperature written in the form:
      * key = <i>value</i>
@@ -15,9 +15,15 @@ public class ReadableImpl implements Readable{
      * @return long
      */
     ReadableFactory.Type readType;
-    public ReadableImpl(ReadableFactory.Type type){
+    public ReadableDefaultImpl(ReadableFactory.Type type){
         this.readType = type;
     }
+
+    @Override
+    public long getLongValue() {
+        return 0;
+    }
+
     @Override
     public long getValue() {
 
@@ -36,6 +42,11 @@ public class ReadableImpl implements Readable{
         InputReader ir = InputReaderFactory.getInputReader(readType);
         HashMap<String, Object> values = ir.getValues();
         return values;
+    }
+
+    @Override
+    public String getStringValue() {
+        return null;
     }
 
 }

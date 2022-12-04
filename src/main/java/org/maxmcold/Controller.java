@@ -15,6 +15,7 @@ import org.maxmcold.utils.CoolProperties;
 import org.maxmcold.utils.RuleParser;
 
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -26,33 +27,37 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class Controller implements Runnable{
 
+    public Controller() throws IOException {
+
+        CoolProperties.loadProperties();
+        prop = CoolProperties.getProperties();
+
+
+    }
+
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
     Properties prop;
     private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(10);
     private static int initialDelay = 5;
-    private static int delay =5;
+    private static int delay = 10;
 
-
+    public static void setDelay(int readDelay){
+        delay = readDelay;
+    }
     @SuppressWarnings("rawtypes")
     public void execute() {
-        ScheduledFuture handleAtFixedDelay = scheduler.scheduleWithFixedDelay(this, initialDelay, delay, SECONDS);
+        //ScheduledFuture handleAtFixedDelay =
+
+        Controller.delay = Integer.parseInt(CoolProperties.delay);
+        scheduler.scheduleWithFixedDelay(this, initialDelay, delay, SECONDS);
     }
 
     @Override
     public void run() {
        try{
-
-           CoolProperties.loadProperties();
-           Item item = ItemFactory.getItem();
-           OutputWriter ow = OutputWriterFactory.getOutputWriter(item);
-           ow.write(item);
-
-           prop = CoolProperties.getProperties();
-           logger.debug("Starting controller");
-
+           logger.debug("Starting controller execution...");
            Area area = new Area("Salotto");
-           logger.debug("getting sensor list");
-
+           logger.debug("getting sensor list for area "+area.getName());
            HashMap<String, Sensor> sensors = area.getSensors();
 
            //TODO: just print for now
@@ -62,11 +67,6 @@ public class Controller implements Runnable{
            logger.debug("EVAL STATEMENT: "+rule.getAction());
            logger.debug("]]]]]]]]]]] END CONDITION RECURSIVE CHECK");
            //TODO group sensors by area
-           //Readable readme = ReadableFactory.getReadable(ReadableFactory.Type.TEMPERATURE);
-           //long value = readme.getValue();
-           //logger.debug("READ TEMP FROM TEMPERATURE OBJECT: "+value);
-
-           //for (int i=0; i< tokens.length; logger.debug(tokens[i++]+"\n"));
 
 
            Iterator<Sensor> iterator = sensors.values().iterator();
