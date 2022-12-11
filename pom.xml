@@ -43,6 +43,11 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.21</version>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.paho</groupId>
+            <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+            <version>1.2.2</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

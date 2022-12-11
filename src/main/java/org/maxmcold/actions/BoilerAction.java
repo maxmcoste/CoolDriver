@@ -2,7 +2,7 @@ package org.maxmcold.actions;
 
 import org.maxmcold.models.Action;
 
-public class BoilerAction implements Action {
+public class BoilerAction  {
 
     public int execute(String actionType){
         switch (actionType){

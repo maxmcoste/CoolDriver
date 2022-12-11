@@ -63,8 +63,8 @@ public class Controller implements Runnable{
            //TODO: just print for now
            Rule rule = RuleFactory.getRule();
            logger.debug("[[[[[[[[[[[ INIT CONDITION RECURSIVE CHECK");
-           rule.execute();
-           logger.debug("EVAL STATEMENT: "+rule.getAction());
+           rule.executeAll();
+           //logger.debug("EVAL STATEMENT: "+rule.getAction());
            logger.debug("]]]]]]]]]]] END CONDITION RECURSIVE CHECK");
            //TODO group sensors by area
 

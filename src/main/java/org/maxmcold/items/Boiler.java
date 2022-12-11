@@ -1,5 +1,4 @@
 package org.maxmcold.items;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.maxmcold.io.*;
@@ -14,6 +13,7 @@ public class Boiler implements Item{
     Long position;
     String status;
     final static Logger logger = LogManager.getLogger(FileInputReader.class);
+    private String id;
 
     public Boiler(){
         //TODO: manage errors
@@ -21,6 +21,7 @@ public class Boiler implements Item{
         InputReader inputReader = InputReaderFactory.getInputReader(ReadableFactory.Type.BOILERSTATUS);
         this.status = inputReader.getValue().toString().trim().split("=")[1].trim();
         this.position = Long.parseLong("-1");
+
 
     }
 
@@ -51,12 +52,15 @@ public class Boiler implements Item{
     }
 
     @Override
-    public Status getStatus() {
+    public Status getStatus(){
+        if (this.status.equals("ON")) return Status.ON;
+        else return Status.OFF;
+
+    }
+    public Status getCurrentStatus() {
 
         Readable read = ReadableFactory.getReadable(ReadableFactory.Type.BOILERSTATUS);
-
         this.status = read.getStringValue();
-
         switch (this.status) {
             case "ON" -> {
                 return Status.ON;
@@ -64,7 +68,6 @@ public class Boiler implements Item{
             case "OFF" -> {
                 return Status.OFF;
             }
-
             default -> {
                 return Status.ON;
             }
@@ -79,15 +82,16 @@ public class Boiler implements Item{
     }
 
     @Override
-    public boolean setStatus(Status status) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
-        if (status == this.getStatus()) return true;
-        switch (status){
+    public boolean setStatus(Status stat) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException {
+        if (stat == this.getCurrentStatus()) return true;
+
+        switch (stat){
             case ON -> {this.status = "ON";}
             case OFF -> {this.status = "OFF";}
             default -> {this.status = "UNDEFINED";}
         }
         OutputWriter ow = OutputWriterFactory.getOutputWriter(this);
-        ow.write(this);
+        ow.write(this, this.getID()+".status="+this.getStatus()+"\n");
         logger.debug("Changing status to... " + status);
         return true;
     }
@@ -96,7 +100,8 @@ public class Boiler implements Item{
 
     @Override
     public String getType() {
-        return null;
+
+        return CoolProperties.boilerFieldName;
     }
 
     @Override
@@ -106,7 +111,7 @@ public class Boiler implements Item{
     }
 
     @Override
-    public String getWriterURL() {
+    public String getWriterURI() {
         return CoolProperties.boilerWriterFile;
     }
 
@@ -114,6 +119,16 @@ public class Boiler implements Item{
     public Long getPosition() {
         if (this.position == null) return Long.parseLong("-1");
         return this.position;
+    }
+
+    @Override
+    public String getID() {
+        return this.id;
+    }
+
+    @Override
+    public void setID(String name) {
+        this.id = name;
     }
 
 

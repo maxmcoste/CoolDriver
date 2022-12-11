@@ -3,4 +3,17 @@ code: 1
 description: when temp is under 20 and boiler is off then switch on boiler
 name: setBoiler
 areas: sala, room1, room2, room3
-action: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler->setStatus(ON)}
+actions:
+  - action: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} < 20 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler.solo->setStatus(ON)}
+    name: name1
+    description: desc1
+  - action: WHEN ${readable.sunposition.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.windowstatus.value} = 0 AND ${readable.temperature.value} > 8 THEN ${item.boiler.ciccio->setStatus(ON)}
+    name: name2
+    description: desc2
+  - action: WHEN ${readable.sunposition.value} = 3 AND ${readable.windowstatus.value} = 0 OR ${readable.temperature.value} < 20  AND ${readable.temperature.value} > 8 THEN ${item.boiler.bacicchio->setStatus(ON)}
+    name: name3
+    description: desc3
+  - action: WHEN ${readable.temperature.value} > 15 THEN ${item.boiler.ciccio->setStatus(OFF)}
+    name: name3
+    description: desc3
+      -

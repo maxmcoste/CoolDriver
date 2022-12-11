@@ -7,7 +7,7 @@ import org.maxmcold.io.FileInputReader;
 
 import java.io.IOException;
 
-public class WindowAction implements Action {
+public class WindowAction {
     final static Logger logger = LogManager.getLogger(FileInputReader.class);
 
     private int position = -1;

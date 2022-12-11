@@ -12,13 +12,14 @@ public class RuleFactory {
 
         Yaml yaml = new Yaml();
         FileInputStream fis = new FileInputStream(CoolProperties.ruleConfigFile);
-
-        return yaml.load(fis);
+        Rule r = yaml.load(fis);
+        return r;
     }
     public static Rule getRule(String fileFullPath) throws FileNotFoundException {
         Yaml yaml = new Yaml();
-        FileInputStream fis = new FileInputStream(fileFullPath);
+        FileInputStream fis = new FileInputStream("./rules/multi.configuration.yml");
         return yaml.load(fis);
     }
+
 
 }

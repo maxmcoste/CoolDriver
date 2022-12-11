@@ -12,12 +12,14 @@ public interface Item {
     boolean offStatus();
 
     Status getStatus();
-    boolean setPosition(Long position);
+    boolean setPosition(Long position) throws IOException, ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException;
     boolean setStatus(Status status) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, IOException;
     String getType();
     String getWriterType();
-    String getWriterURL();
+    String getWriterURI();
     Long getPosition();
+    String getID();
+    void setID(String id);
 
 
 
