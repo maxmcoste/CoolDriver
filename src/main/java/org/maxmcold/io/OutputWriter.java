@@ -6,7 +6,8 @@ import org.maxmcold.items.Item;
 import java.io.IOException;
 
 public interface OutputWriter {
-    boolean write(Item item) throws IOException;
+    boolean write(Item item, String stream) throws IOException;
+
 
 
 }

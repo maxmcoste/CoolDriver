@@ -20,6 +20,7 @@ public  class RuleSyntax {
 
     public static boolean checkCondition(String condition){
 
+        if (!condition.substring(0,4).equals("WHEN")) return false;
 
 
         return true;

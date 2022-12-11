@@ -4,28 +4,26 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.maxmcold.Controller;
 import org.maxmcold.errors.RuleSyntaxError;
-import org.maxmcold.io.OutputWriter;
+
 import org.maxmcold.items.Item;
 import org.maxmcold.items.ItemFactory;
+import org.maxmcold.models.Action;
 import org.maxmcold.readable.Readable;
 import org.maxmcold.readable.ReadableFactory;
 import org.maxmcold.utils.CoolProperties;
 import org.maxmcold.utils.RuleParser;
-import org.yaml.snakeyaml.Yaml;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Iterator;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static java.lang.Class.forName;
 
 public class Rule {
-
-
-
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
     public String getDescription() {
@@ -38,6 +36,12 @@ public class Rule {
 
     public String description;
     private String code;
+    private String when;
+    private String then;
+    private List<Action> actions;
+    private String name;
+    private String areas;
+    //private String action;
 
     public String getCode() {
         return code;
@@ -63,56 +67,70 @@ public class Rule {
         this.areas = areas;
     }
 
-    public String getAction() {
-        return action;
+    public List<Action> getActions() {
+        return actions;
     }
 
-    public void setAction(String action) {
-        this.action = action;
+    public void setActions(List actions) {
+        this.actions = actions;
     }
 
+    @Override
+    public String toString(){
+        return "Rule {" +
+                name + ", " +
+                code + ", " +
+                description + ", " +
+                "}";
+    }
 
-    private String name;
-    private String areas;
-    private String action;
-
-    public void execute() throws FileNotFoundException, RuleSyntaxError, ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    public void executeAll() throws FileNotFoundException, RuleSyntaxError, ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
 
         RuleParser rp = new RuleParser();
-        rp.parse(this);
+        Iterator<Action> actions = this.actions.listIterator();
 
-        String when = rp.getWhenStatement();
-        String then = rp.getThenStatement();
-        if (null == when) throw new RuleSyntaxError("When condition is null");
+        while (actions.hasNext()){
+            Action a = actions.next();
+            rp.parse(a.getAction());
+            logger.debug("Executing rule " + a.getName() + " with description: "+ a.getDescription());
+            this.when = rp.getWhenStatement();
+            this.then = rp.getThenStatement();
 
+            if (null == when || null == then) throw new RuleSyntaxError("When and/or Then condition is null");
 
-        if (runConditions(when)){
-
-            //expected only one param in then statement
-            String param = extractParams(then)[0];
-            String untaggedParam = RuleParser.untagParam(param);
-            String itemName = untaggedParam.split("->")[0];
-            String actionName = untaggedParam.split("->")[1];
-            Item item = getItem(itemName);
-            String parameter = RuleParser.getActionParam(actionName);
-            String methodName = RuleParser.getActionName(actionName);
-
-            //TODO: define the position
-            Method method = Item.class.getMethod(methodName, Item.Status.class);
-            if (parameter.equals("ON"))
-                method.invoke(item, Item.Status.ON);
-            else if (parameter.equals("OFF"))
-                method.invoke(item, Item.Status.OFF);
-
-
-
+            if (runConditions(when)) this.runAction();
         }
 
 
 
 
-    }
 
+
+
+
+    }
+    private boolean runAction() throws InvocationTargetException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, InstantiationException {
+        //expected only one param in then statement
+
+        String param = extractParams(then)[0];
+        String untaggedParam = RuleParser.untagParam(param);
+        String itemName = untaggedParam.split("->")[0];
+        String actionName = untaggedParam.split("->")[1];
+        Item item = getItem(itemName);
+        String parameter = RuleParser.getActionParam(actionName);
+        String methodName = RuleParser.getActionName(actionName);
+
+        //TODO: define the position
+
+        Method method = Item.class.getMethod(methodName, Item.Status.class);
+        if (method == null) throw new NoSuchMethodException("No method found for class " + Item.class.toString() + " and method "+ methodName );
+        if (parameter.equals("ON"))
+            method.invoke(item, Item.Status.ON);
+        else if (parameter.equals("OFF"))
+            method.invoke(item, Item.Status.OFF);
+
+        return true;
+    }
 
     private boolean runConditions(String when){
 
@@ -172,7 +190,7 @@ public class Rule {
         //TODO made simple now for testing reasons. To be abstracted in future
         String[] tokens = param.split("\\.");
         if (tokens[0].equals("item")){
-            item = ItemFactory.getItem(tokens[1].trim());
+            item = ItemFactory.getItem(tokens[1].trim(),tokens[2].trim());
         }
         return item;
 

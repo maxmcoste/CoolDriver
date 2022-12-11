@@ -51,9 +51,11 @@ public class CoolProperties {
 
     public static String ruleConfigFile;
     public static String boilerReadType;
-    public static String boilerReaderURL;
+    public static String boilerReaderURI;
     public static String delay;
     public static String boilerFieldName;
+    public static String windowWriterType;
+    public static String windowWriterFile;
 
     public static Properties getProperties() throws IOException {
 
@@ -118,8 +120,11 @@ public class CoolProperties {
         boilerWriterType = prop.getProperty("item.boiler.write.type");
         boilerWriterFile = prop.getProperty("item.boiler.filewriter.file.name");
 
+        windowWriterType = prop.getProperty("item.window.write.type");
+        windowWriterFile = prop.getProperty("item.window.filewriter.file.name");
+
         boilerReadType = prop.getProperty("sensor.boiler.stream.type");
-        boilerReaderURL = prop.getProperty("sensor.boiler.stream.type.uri.name");
+        boilerReaderURI = prop.getProperty("sensor.boiler.stream.type.uri.name");
 
         instance = prop;
         return instance;

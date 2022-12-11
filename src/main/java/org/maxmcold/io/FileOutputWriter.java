@@ -1,6 +1,10 @@
 package org.maxmcold.io;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.maxmcold.Controller;
 import org.maxmcold.items.Item;
+import org.maxmcold.utils.CoolProperties;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,25 +15,27 @@ import java.time.format.DateTimeFormatter;
 
 public class FileOutputWriter implements OutputWriter{
 
+    final static Logger logger = LogManager.getLogger(Controller.class.getName());
+
+
     public FileOutputWriter(){
 
     }
 
     @Override
-    public boolean write(Item item) throws IOException {
-
-        String fileName = item.getWriterURL();
-        if (null == fileName) throw new IOException("Missine filename for writer, check your configuration file");
-        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
-        String status = "ON";
-        switch (item.getStatus()){
-            case ON -> status = "ON";
-            case OFF -> status = "OFF";
+    public boolean write(Item item, String stream) throws IOException {
+        if (item.getType().equals(CoolProperties.boilerFieldName)){
+            return setBoilerStatus(stream);
         }
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
-        writer.write(dtf.format(now) + " status ---> " + status + " position ---> "+item.getPosition() +"\n");
-        writer.flush();
         return false;
+    }
+    private boolean setBoilerStatus(String stream) throws IOException{
+
+        String fileName = CoolProperties.boilerReaderURI;
+        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+        writer.write(stream);
+        writer.flush();
+        logger.info("Changed boiler status to: " +stream);
+        return true;
     }
 }

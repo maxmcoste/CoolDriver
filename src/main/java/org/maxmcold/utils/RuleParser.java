@@ -32,20 +32,13 @@ public class RuleParser {
     }
 
 
-    public void parse(Rule rule) throws FileNotFoundException,RuleSyntaxError {
+    public void parse(String rule) throws FileNotFoundException,RuleSyntaxError {
 
-        Yaml yaml = new Yaml();
-        FileInputStream fis = new FileInputStream(CoolProperties.ruleConfigFile);
-
-        rule = yaml.load(fis);
-        this.ruleText = rule.getAction();
+        this.ruleText = rule;
         //logger.debug(rule.getAction());
         setConditionStatements();
         //Check syntax errors
-        if (RuleSyntax.checkCondition(rule.getAction()) != true) throw new RuleSyntaxError();
-
-
-
+        if (RuleSyntax.checkCondition(rule) != true) throw new RuleSyntaxError();
 
     }
     /**
@@ -65,6 +58,7 @@ public class RuleParser {
         out = out.split(";")[0].trim().substring(0,out.length()-2);
         return out;
     }
+
     public static String getActionParam(String ruleAction){
         Pattern pattern = Pattern.compile("\\(.*\\)");
         Matcher matcher = pattern.matcher(ruleAction);
