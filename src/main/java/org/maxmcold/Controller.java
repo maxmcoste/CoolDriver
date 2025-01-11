@@ -2,17 +2,14 @@ package org.maxmcold;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import org.maxmcold.io.OutputWriter;
-import org.maxmcold.io.OutputWriterFactory;
-import org.maxmcold.items.Item;
-import org.maxmcold.items.ItemFactory;
+
 import org.maxmcold.models.*;
 import org.maxmcold.readable.Readable;
-import org.maxmcold.readable.ReadableFactory;
+
 import org.maxmcold.rules.Rule;
 import org.maxmcold.rules.RuleFactory;
 import org.maxmcold.utils.CoolProperties;
-import org.maxmcold.utils.RuleParser;
+
 
 
 import java.io.IOException;
@@ -46,7 +43,7 @@ public class Controller implements Runnable{
     }
     @SuppressWarnings("rawtypes")
     public void execute() {
-        //ScheduledFuture handleAtFixedDelay =
+
 
         Controller.delay = Integer.parseInt(CoolProperties.delay);
         scheduler.scheduleWithFixedDelay(this, initialDelay, delay, SECONDS);

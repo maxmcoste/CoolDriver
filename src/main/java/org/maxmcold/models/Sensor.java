@@ -2,12 +2,13 @@ package org.maxmcold.models;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.Nullable;
 import org.maxmcold.Controller;
 import org.maxmcold.io.InputReader;
 import org.maxmcold.io.InputReaderFactory;
 import org.maxmcold.readable.Readable;
 import org.maxmcold.readable.ReadableFactory;
-import org.maxmcold.statuses.Status;
+
 import org.maxmcold.utils.CoolProperties;
 
 import java.io.IOException;
@@ -16,7 +17,7 @@ public class Sensor {
 
     private Area area;
     private InputReader inputReader;
-    private Status status;
+
     private ReadableFactory.Type type;
     private String code;
     private String name;
@@ -25,6 +26,7 @@ public class Sensor {
     private Readable readable;
 
     final static Logger logger = LogManager.getLogger(Controller.class.getName());
+    private boolean status;
 
 
     public Sensor(ReadableFactory.Type type){
@@ -116,15 +118,10 @@ public class Sensor {
 
 
 
-    public Status getStatus() {
-        return status;
-    }
 
-    public void setStatus(Status status) {
-        this.status = status;
-    }
 
-    private InputReader getInputReader() {
+
+    /*private @Nullable InputReader getInputReader() {
         if (this.status == Status.OFF) return null;
         try {
             CoolProperties.getProperties();
@@ -176,7 +173,7 @@ public class Sensor {
 
         }
         return inputReader;
-    }
+    }*/
 
 
 
